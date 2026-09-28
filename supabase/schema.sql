@@ -4,9 +4,14 @@ create table if not exists public.profiles (
   id uuid primary key references auth.users(id) on delete cascade,
   full_name text not null check (char_length(full_name) between 2 and 150),
   email text not null,
+  level text not null default 'student' check (level in ('school','student')),
   role text not null default 'student' check (role in ('student','admin')),
+  consent_at timestamptz not null default now(),
   created_at timestamptz not null default now()
 );
+-- Совместимость с общей базой школьной и студенческой версий.
+alter table public.profiles add column if not exists level text not null default 'student' check (level in ('school','student'));
+alter table public.profiles add column if not exists consent_at timestamptz not null default now();
 create table if not exists public.student_lesson_progress (
   user_id uuid not null references public.profiles(id) on delete cascade,
   lesson_id smallint not null check (lesson_id between 1 and 15),
@@ -45,8 +50,15 @@ create policy "student certificate own read" on public.student_certificates for 
 
 create or replace function public.handle_new_user() returns trigger language plpgsql security definer set search_path=public as $$
 begin
-  insert into public.profiles(id,full_name,email)
-  values(new.id,coalesce(nullif(trim(new.raw_user_meta_data->>'full_name'),''),'Студент'),coalesce(new.email,''));
+  insert into public.profiles(id,full_name,email,level,role,consent_at)
+  values(
+    new.id,
+    coalesce(nullif(trim(new.raw_user_meta_data->>'full_name'),''),'Студент'),
+    coalesce(new.email,''),
+    case when new.raw_user_meta_data->>'level' in ('school','student') then new.raw_user_meta_data->>'level' else 'student' end,
+    'student',
+    now()
+  );
   return new;
 end $$;
 drop trigger if exists on_auth_user_created on auth.users;
