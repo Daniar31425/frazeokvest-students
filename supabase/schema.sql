@@ -34,6 +34,10 @@ alter table public.profiles enable row level security;
 alter table public.lesson_progress enable row level security;
 alter table public.final_results enable row level security;
 alter table public.certificates enable row level security;
+drop policy if exists "profile own read" on public.profiles;
+drop policy if exists "progress own read" on public.lesson_progress;
+drop policy if exists "final own read" on public.final_results;
+drop policy if exists "certificate own read" on public.certificates;
 create policy "profile own read" on public.profiles for select to authenticated using (id=auth.uid());
 create policy "progress own read" on public.lesson_progress for select to authenticated using (user_id=auth.uid());
 create policy "final own read" on public.final_results for select to authenticated using (user_id=auth.uid());
@@ -99,7 +103,10 @@ begin
  return jsonb_build_object('score',v_score,'passed',v_score>=70,'certificate',(select c.certificate_number from public.certificates c where c.user_id=v_uid));
 end $$;
 
-create or replace function public.admin_course_records(p_search text default '')
+-- PostgreSQL не позволяет CREATE OR REPLACE при изменении набора OUT-столбцов.
+-- Удаление требуется при переходе со школьной версии схемы.
+drop function if exists public.admin_course_records(text);
+create function public.admin_course_records(p_search text default '')
 returns table(full_name text,email text,completed bigint,mini_average numeric,final_score smallint,certificate_number char(5),issued_at timestamptz)
 language plpgsql security definer set search_path=public as $$
 begin
