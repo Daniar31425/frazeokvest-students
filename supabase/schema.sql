@@ -84,6 +84,23 @@ begin
  return jsonb_build_object('score',v_score,'passed',v_score>=67);
 end $$;
 
+-- Новая версия курса содержит разные типы заданий. Интерфейс вычисляет общий
+-- процент по стабильным id из course.json, а эта функция безопасно сохраняет
+-- результат и по-прежнему контролирует последовательное открытие уроков.
+create or replace function public.student_record_lesson_score(p_lesson_id integer,p_score integer)
+returns jsonb language plpgsql security definer set search_path=public as $$
+declare v_uid uuid:=auth.uid(); v_completed integer;
+begin
+ if v_uid is null then raise exception 'Требуется вход'; end if;
+ if p_lesson_id not between 1 and 15 or p_score not between 0 and 100 then raise exception 'Некорректный результат'; end if;
+ select count(*) into v_completed from public.student_lesson_progress lp where lp.user_id=v_uid and lp.passed;
+ if p_lesson_id>v_completed+1 then raise exception 'Сначала завершите предыдущий урок'; end if;
+ insert into public.student_lesson_progress as lp(user_id,lesson_id,attempts,best_score,passed,completed_at)
+ values(v_uid,p_lesson_id,1,p_score,p_score>=70,case when p_score>=70 then now() end)
+ on conflict(user_id,lesson_id) do update set attempts=lp.attempts+1,best_score=greatest(lp.best_score,excluded.best_score),passed=lp.passed or excluded.passed,completed_at=coalesce(lp.completed_at,excluded.completed_at);
+ return jsonb_build_object('score',p_score,'passed',p_score>=70);
+end $$;
+
 create or replace function public.student_submit_final_quiz(p_answers integer[])
 returns jsonb language plpgsql security definer set search_path=public as $$
 declare v_uid uuid:=auth.uid(); v_completed integer; v_correct integer:=0; v_score integer; v_key integer[]:=array[0,1,2,0,1,0,1,1,0,1,0,1,0,1,1]; v_number char(5);
@@ -117,7 +134,8 @@ begin
  group by p.id,p.full_name,p.email,fr.best_score,c.certificate_number,c.issued_at order by p.full_name;
 end $$;
 revoke all on function public.student_submit_lesson_quiz(integer,integer[]) from public;
+revoke all on function public.student_record_lesson_score(integer,integer) from public;
 revoke all on function public.student_submit_final_quiz(integer[]) from public;
 revoke all on function public.student_get_course_state() from public;
 revoke all on function public.student_admin_course_records(text) from public;
-grant execute on function public.student_submit_lesson_quiz(integer,integer[]),public.student_submit_final_quiz(integer[]),public.student_get_course_state(),public.student_admin_course_records(text) to authenticated;
+grant execute on function public.student_submit_lesson_quiz(integer,integer[]),public.student_record_lesson_score(integer,integer),public.student_submit_final_quiz(integer[]),public.student_get_course_state(),public.student_admin_course_records(text) to authenticated;
