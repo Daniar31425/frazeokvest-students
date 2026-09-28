@@ -8,8 +8,8 @@ export const courseApi={
  login:(email,password)=>supabase.auth.signInWithPassword({email,password}),
  logout:()=>supabase.auth.signOut(),
  session:()=>supabase.auth.getSession(),
- state:()=>supabase.rpc('get_course_state'),
- submitLesson:(lessonId,answers)=>supabase.rpc('submit_lesson_quiz',{p_lesson_id:lessonId,p_answers:answers}),
- submitFinal:answers=>supabase.rpc('submit_final_quiz',{p_answers:answers}),
- adminSearch:search=>supabase.rpc('admin_course_records',{p_search:search})
+ state:()=>supabase.rpc('student_get_course_state'),
+ submitLesson:(lessonId,answers)=>supabase.rpc('student_submit_lesson_quiz',{p_lesson_id:lessonId,p_answers:answers}),
+ submitFinal:answers=>supabase.rpc('student_submit_final_quiz',{p_answers:answers}),
+ adminSearch:search=>supabase.rpc('student_admin_course_records',{p_search:search})
 };
