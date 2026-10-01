@@ -41,7 +41,15 @@ function markdown(source = '') {
 
 function shell(content, active = 'course') {
   const admin = state.role === 'admin' || !isSupabaseConfigured;
-  return `<div class="app-shell"><header class="topbar">${logo()}<div class="user"><div class="avatar">${escapeHtml(state.name[0] || 'С')}</div><span><strong>${escapeHtml(state.name)}</strong><br><small>${state.role === 'admin' ? 'Преподаватель' : 'Студенческий курс'}</small></span></div></header><div class="workspace"><nav class="sidebar"><small>ОБУЧЕНИЕ</small><button data-go="course" class="${active === 'course' ? 'active' : ''}">Мой курс</button><button data-go="final" class="${active === 'final' ? 'active' : ''}">Итоговый тест</button><button data-go="certificate" class="${active === 'certificate' ? 'active' : ''}">Сертификат</button>${admin ? `<small>УПРАВЛЕНИЕ</small><button data-go="admin" class="${active === 'admin' ? 'active' : ''}">Админ-панель</button>` : ''}<button data-action="logout">Выйти</button></nav><main class="content">${content}</main></div></div>`;
+  return `<div class="app-shell"><header class="topbar"><div class="topbar-start"><button class="mobile-menu-btn" data-action="open-menu" aria-label="Открыть меню" aria-controls="course-sidebar" aria-expanded="false"><span></span><span></span><span></span></button>${logo()}</div><div class="user"><div class="avatar">${escapeHtml(state.name[0] || 'С')}</div><span><strong>${escapeHtml(state.name)}</strong><br><small>${state.role === 'admin' ? 'Преподаватель' : 'Студенческий курс'}</small></span></div></header><div class="workspace"><button class="sidebar-overlay" data-action="close-menu" aria-label="Закрыть меню"></button><nav class="sidebar" id="course-sidebar" aria-label="Навигация курса"><div class="sidebar-mobile-head">${logo()}<button class="sidebar-close" data-action="close-menu" aria-label="Закрыть меню">×</button></div><small>ОБУЧЕНИЕ</small><button data-go="course" class="${active === 'course' ? 'active' : ''}">Мой курс</button><button data-go="final" class="${active === 'final' ? 'active' : ''}">Итоговый тест</button><button data-go="certificate" class="${active === 'certificate' ? 'active' : ''}">Сертификат</button>${admin ? `<small>УПРАВЛЕНИЕ</small><button data-go="admin" class="${active === 'admin' ? 'active' : ''}">Админ-панель</button>` : ''}<button data-action="logout">Выйти</button></nav><main class="content">${content}</main></div></div>`;
+}
+
+function setMobileMenu(open) {
+  const sidebar = document.querySelector('.sidebar');
+  const trigger = document.querySelector('.mobile-menu-btn');
+  document.documentElement.classList.toggle('menu-open', open);
+  sidebar?.classList.toggle('is-open', open);
+  trigger?.setAttribute('aria-expanded', String(open));
 }
 
 function renderAuth(message = '') {
@@ -155,13 +163,19 @@ function go(screen) { state.screen = screen; save(); ({course:dashboard, final:f
 
 document.addEventListener('click', async event => {
   const button = event.target.closest('button'); if (!button) return;
+  if (button.dataset.action === 'open-menu') return setMobileMenu(true);
+  if (button.dataset.action === 'close-menu') return setMobileMenu(false);
   if (button.dataset.action === 'demo') { state.screen = 'course'; save(); dashboard(); }
   if (button.dataset.action === 'toggle-auth') { state.mode = state.mode === 'login' ? 'register' : 'login'; renderAuth(); }
   if (button.dataset.action === 'logout') { if (isSupabaseConfigured) await courseApi.logout(); state.screen = 'auth'; save(); renderAuth(); }
   if (button.dataset.action === 'start-quiz') quizView();
   if (button.dataset.action === 'print') window.print();
-  if (button.dataset.go) go(button.dataset.go);
-  if (button.dataset.lesson) lessonView(Number(button.dataset.lesson));
+  if (button.dataset.go) { setMobileMenu(false); go(button.dataset.go); }
+  if (button.dataset.lesson) { setMobileMenu(false); lessonView(Number(button.dataset.lesson)); }
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') setMobileMenu(false);
 });
 
 document.addEventListener('submit', async event => {
