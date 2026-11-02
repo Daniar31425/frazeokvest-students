@@ -1,0 +1,6 @@
+.rich-lesson .presentation-card{margin:28px 0;padding:24px;border:1px solid #cbdcf8;border-radius:16px;background:#f0f5ff;display:grid;gap:14px;justify-items:start}
+.presentation-card h2{margin:10px 0;font-size:1.5rem}
+.presentation-card p{margin:0;line-height:1.6;color:#53627c}
+.presentation-card .btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;min-height:48px;white-space:normal}
+.presentation-card small{color:#63748e}
+@media(max-width:760px){.rich-lesson .presentation-card{padding:20px 16px}.presentation-card .btn{width:100%;text-align:center}.presentation-card h2{font-size:1.3rem}}
