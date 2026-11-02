@@ -1,5 +1,6 @@
 import './styles.css';
 import './presentations.css';
+import './landing.css';
 import { presentationCard } from './presentations.js';
 import { finalQuestions } from './course.js';
 import { courseApi, isSupabaseConfigured } from './supabase.js';
@@ -56,6 +57,16 @@ function setMobileMenu(open) {
 
 function renderAuth(message = '') {
   app.innerHTML = `<main class="auth-wrap"><section class="auth-card">${logo()}<span class="eyebrow">Массовый онлайн-курс</span><h1>${state.mode === 'register' ? 'Создать аккаунт' : 'Войти в курс'}</h1><p class="muted">15 полноценных уроков, тесты после каждой темы и итоговая проверка.</p>${message ? `<div class="notice">${escapeHtml(message)}</div>` : !isSupabaseConfigured ? '<div class="notice">Supabase не настроен — доступен локальный демо-режим.</div>' : ''}<form data-form="auth">${state.mode === 'register' ? '<label class="field">ФИО<input name="name" required placeholder="Иванов Иван Иванович"></label>' : ''}<label class="field">Email<input name="email" type="email" required></label><label class="field">Пароль<input name="password" type="password" required minlength="6"></label><button class="btn btn-primary">${state.mode === 'register' ? 'Зарегистрироваться' : 'Войти'}</button></form><button class="link-btn" data-action="toggle-auth">${state.mode === 'register' ? 'Уже есть аккаунт? Войти' : 'Нет аккаунта? Регистрация'}</button>${!isSupabaseConfigured ? '<button class="btn btn-outline demo" data-action="demo">Открыть демо курса</button>' : ''}</section></main>`;
+}
+
+function renderLanding() {
+  state.screen = 'landing'; save();
+  const lecturers = [
+    ['galiya-alikovna.png', 'Галия Аликовна'],
+    ['valentina-dmitrievna.png', 'Нарожная Валентина Дмитриевна'],
+    ['elmira-asiltayevna.png', 'Орынбетова Эльмира Асилтаевна']
+  ];
+  app.innerHTML = `<main class="landing"><header class="landing-header">${logo()}<span>Онлайн-курс для студентов</span></header><section class="landing-intro"><span class="eyebrow">Русский и казахский языки</span><h1>Фразеологическая картина мира: <em>изучаем, сравниваем, применяем</em></h1><p>Устойчивые выражения — ключ к языку и культуре. Узнайте, как устроены фразеологизмы, сравните русские и казахские обороты и научитесь применять их в речи.</p><div class="landing-facts"><span>15 лекций</span><span>Интерактивные презентации</span><span>Тесты и сертификат</span></div><a class="landing-scroll" href="#lecturers">Познакомиться с лекторами <span aria-hidden="true">↓</span></a></section><section class="landing-lecturers" id="lecturers"><span class="eyebrow">Авторы и лекторы</span><h2>Ваши проводники в мир фразеологии</h2><div class="lecturer-grid">${lecturers.map(([photo,name])=>`<article class="lecturer-card"><img src="/lecturers/${photo}" alt="${name}" loading="lazy"><h3>${name}</h3><p>Лектор курса</p></article>`).join('')}</div></section><section class="landing-start"><h2>От знакомства — к пониманию</h2><p>Изучайте материал в своём темпе, проверяйте знания после каждой темы и завершите курс итоговым тестом.</p><button class="btn btn-primary" data-action="enter-course">Начать курс <span aria-hidden="true">→</span></button><small>Войдите в аккаунт или зарегистрируйтесь</small></section><footer class="landing-footer">Фразеология · Онлайн-курс для студентов</footer></main>`;
 }
 
 function dashboard() {
@@ -166,10 +177,11 @@ function go(screen) { state.screen = screen; save(); ({course:dashboard, final:f
 document.addEventListener('click', async event => {
   const button = event.target.closest('button'); if (!button) return;
   if (button.dataset.action === 'open-menu') return setMobileMenu(true);
+  if (button.dataset.action === 'enter-course') { state.screen = 'auth'; state.mode = 'login'; save(); renderAuth(); window.scrollTo(0, 0); return; }
   if (button.dataset.action === 'close-menu') return setMobileMenu(false);
   if (button.dataset.action === 'demo') { state.screen = 'course'; save(); dashboard(); }
   if (button.dataset.action === 'toggle-auth') { state.mode = state.mode === 'login' ? 'register' : 'login'; renderAuth(); }
-  if (button.dataset.action === 'logout') { if (isSupabaseConfigured) await courseApi.logout(); state.screen = 'auth'; save(); renderAuth(); }
+  if (button.dataset.action === 'logout') { if (isSupabaseConfigured) await courseApi.logout(); renderLanding(); window.scrollTo(0, 0); }
   if (button.dataset.action === 'start-quiz') quizView();
   if (button.dataset.action === 'print') window.print();
   if (button.dataset.go) { setMobileMenu(false); go(button.dataset.go); }
@@ -215,7 +227,7 @@ async function hydrateRemote() {
 
 async function bootstrap() {
   const response = await fetch('/course.json'); course = await response.json(); lessons = course.modules.flatMap(module => module.lessons).sort((a, b) => a.order - b.order);
-  if (isSupabaseConfigured) { const {data} = await courseApi.session(); if (data.session) { await hydrateRemote(); state.screen = 'course'; return dashboard(); } state.screen = 'auth'; }
-  state.screen === 'auth' ? renderAuth() : go(state.screen);
+  if (isSupabaseConfigured) { const {data} = await courseApi.session(); if (data.session) { await hydrateRemote(); state.screen = 'course'; return dashboard(); } return renderLanding(); }
+  ['auth', 'landing'].includes(state.screen) ? renderLanding() : go(state.screen);
 }
 bootstrap().catch(error => { app.innerHTML = `<main class="auth-wrap"><section class="auth-card"><h1>Не удалось загрузить курс</h1><p>${escapeHtml(error.message)}</p></section></main>`; });
