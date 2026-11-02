@@ -85,7 +85,7 @@ function renderItem(item) {
   if (item.type === 'reading') return `<section class="reading-section"><h2>${escapeHtml(item.title)}</h2>${item.blocks.map(renderBlock).join('')}</section>`;
   if (item.type === 'key_terms') return `<section><h2>${escapeHtml(item.title)}</h2><dl class="terms">${item.terms.map(x => `<div><dt>${escapeHtml(x.term)}</dt><dd>${markdown(x.definition)}</dd></div>`).join('')}</dl></section>`;
   if (item.type === 'recap') return `<section><h2>${escapeHtml(item.title)}</h2><ol class="recap">${item.points.map(x => `<li>${markdown(x)}</li>`).join('')}</ol></section>`;
-  if (item.type === 'practice') return `<section><h2>${escapeHtml(item.title)}</h2><div class="practice-list">${item.tasks.map((task, i) => `<article><h3>Задание ${i + 1}</h3>${markdown(task.prompt_md)}<textarea placeholder="Запишите свой ответ..."></textarea>${task.self_check ? `<details><summary>Показать эталон и критерии</summary>${markdown(task.reference_answer_md || task.criteria_md)}</details>` : '<p class="teacher-review">Ответ проверяет преподаватель</p>'}</article>`).join('')}</div></section>`;
+  if (item.type === 'practice') return `<section><h2>${escapeHtml(item.title)}</h2><div class="practice-list">${item.tasks.map((task, i) => `<article><h3>Задание ${i + 1}</h3>${markdown(task.prompt_md)}<textarea placeholder="Запишите свой ответ..."></textarea>${!task.self_check ? '<p class="teacher-review">Ответ проверяет преподаватель</p>' : ''}</article>`).join('')}</div></section>`;
   if (item.type === 'references') return `<details class="references"><summary>${escapeHtml(item.title)}</summary>${markdown(item.entries_md)}</details>`;
   return '';
 }
@@ -102,7 +102,7 @@ function optionInput(question, option, index, multiple = false) {
 }
 
 function questionHtml(question, number) {
-  const title = `<legend>${number}. ${markdown(question.prompt_md)}</legend>`;
+  const title = `<legend>${number + 1}. ${markdown(question.prompt_md)}</legend>`;
   if (question.type === 'single_choice' || question.type === 'multiple_choice') return `<fieldset data-question="${question.id}" data-type="${question.type}">${title}${question.options.map((o, i) => optionInput(question, o, i, question.type === 'multiple_choice')).join('')}</fieldset>`;
   if (question.type === 'matching') return `<fieldset data-question="${question.id}" data-type="matching">${title}${question.left.map(left => `<label class="select-row"><span>${markdown(textOf(left))}</span><select name="${question.id}-${left.id}" required><option value="">Выберите соответствие</option>${question.right.map(right => `<option value="${escapeHtml(right.id)}">${escapeHtml(textOf(right))}</option>`).join('')}</select></label>`).join('')}</fieldset>`;
   if (question.type === 'ordering') return `<fieldset data-question="${question.id}" data-type="ordering">${title}${question.items.map(item => `<label class="select-row"><span>${markdown(textOf(item))}</span><select name="${question.id}-${item.id}" required><option value="">Позиция</option>${question.items.map((_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}</select></label>`).join('')}</fieldset>`;
