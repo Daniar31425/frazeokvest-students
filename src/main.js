@@ -113,7 +113,7 @@ function questionHtml(question, number) {
 function quizView() {
   const lesson = lessons[state.current - 1];
   const quiz = lesson.items.find(item => item.type === 'quiz');
-  app.innerHTML = shell(`<button class="back" data-lesson="${lesson.order}">← Вернуться к материалу</button><section class="test-card"><span class="eyebrow">Тест · Урок ${lesson.order}</span><h1>${escapeHtml(quiz.title)}</h1><p class="muted">${quiz.questions.length} заданий из исходного материала. Зачёт — от ${quiz.pass_percent}%.</p><form data-form="quiz">${quiz.questions.map(questionHtml).join('')}<button class="btn btn-primary">Проверить ответы</button></form></section>`, 'course');
+  app.innerHTML = shell(`<button class="back" data-lesson="${lesson.order}">← Вернуться к материалу</button><section class="test-card"><span class="eyebrow">Тест · Урок ${lesson.order}</span><h1>${escapeHtml(quiz.title)}</h1><form data-form="quiz">${quiz.questions.map(questionHtml).join('')}<button class="btn btn-primary">Проверить ответы</button></form></section>`, 'course');
 }
 
 const sameSet = (a, b) => a.length === b.length && a.every(value => b.includes(value));
