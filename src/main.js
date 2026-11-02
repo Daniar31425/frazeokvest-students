@@ -62,7 +62,7 @@ function renderAuth(message = '') {
 function renderLanding() {
   state.screen = 'landing'; save();
   const lecturers = [
-    ['galiya-alikovna.png', 'Галия Аликовна'],
+    ['galiya-alikovna.png', 'Абзалова Галия Аликовна'],
     ['valentina-dmitrievna.png', 'Нарожная Валентина Дмитриевна'],
     ['elmira-asiltayevna.png', 'Орынбетова Эльмира Асилтаевна']
   ];
