@@ -1,8 +1,12 @@
 const slugs = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen'];
+const localPresentationLinks = {
+  6: '/presentations/lecture-06/index.html',
+  11: '/presentations/lecture-11/index.html',
+};
 
 export const presentationLinks = Object.freeze(Object.fromEntries(slugs.map((slug, index) => [
   index + 1,
-  index === 5 ? '/presentations/lecture-06/index.html' : `https://frazeokvest-lecture-${slug}.${index === 10 ? 'brinylamp65' : 'chatgpt-edu-7368'}.chatgpt.site/`
+  localPresentationLinks[index + 1] ?? `https://frazeokvest-lecture-${slug}.chatgpt-edu-7368.chatgpt.site/`
 ])));
 
 export function presentationCard(order) {
