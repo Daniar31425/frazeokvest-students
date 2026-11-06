@@ -23,7 +23,7 @@ window.LECTURE_IMAGE_MAP = {
   'Бить баклуши': {
     src: 'assets/bit-baklushi.webp',
     alt: 'Иллюстрация выражения «Бить баклуши»',
-    source: 'https://frazeologia.ru/frazeologizm/b/biti-baklushi'
+    source: 'https://frazeokvest-students.vercel.app/#lecturers'
   },
   'Спустя рукава': {
     src: 'assets/spustya-rukava.jpg',
