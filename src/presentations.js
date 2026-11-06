@@ -2,7 +2,7 @@ const slugs = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', '
 
 export const presentationLinks = Object.freeze(Object.fromEntries(slugs.map((slug, index) => [
   index + 1,
-  `https://frazeokvest-lecture-${slug}.${index === 10 ? 'brinylamp65' : 'chatgpt-edu-7368'}.chatgpt.site/`
+  index === 5 ? '/presentations/lecture-06/index.html' : `https://frazeokvest-lecture-${slug}.${index === 10 ? 'brinylamp65' : 'chatgpt-edu-7368'}.chatgpt.site/`
 ])));
 
 export function presentationCard(order) {
