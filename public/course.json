@@ -374,7 +374,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 6,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l01-q01",
@@ -406,40 +406,6 @@
                   ],
                   "correct": [
                     "l01-q01-o2"
-                  ]
-                },
-                {
-                  "id": "l01-q02",
-                  "source_task_no": 2,
-                  "prompt_md": "Какие ученые относятся к раннему этапу собирания и осмысления фразеологического и паремиологического материала?",
-                  "points": 1,
-                  "type": "multiple_choice",
-                  "options": [
-                    {
-                      "id": "l01-q02-o1",
-                      "label": "А",
-                      "text": "В. И. Даль"
-                    },
-                    {
-                      "id": "l01-q02-o2",
-                      "label": "Б",
-                      "text": "А. А. Потебня"
-                    },
-                    {
-                      "id": "l01-q02-o3",
-                      "label": "В",
-                      "text": "И. И. Срезневский"
-                    },
-                    {
-                      "id": "l01-q02-o4",
-                      "label": "Г",
-                      "text": "Ш. Балли"
-                    }
-                  ],
-                  "correct": [
-                    "l01-q02-o1",
-                    "l01-q02-o2",
-                    "l01-q02-o3"
                   ]
                 },
                 {
@@ -507,70 +473,164 @@
                   ]
                 },
                 {
-                  "id": "l01-q07",
-                  "source_task_no": 7,
-                  "prompt_md": "Определите, какой пример относится к свободному сочетанию:",
-                  "points": 1,
+                  "id": "l1-visual-1",
                   "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l01-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-040"
+                  },
                   "options": [
                     {
-                      "id": "l01-q07-o1",
-                      "label": "А",
-                      "text": "читать книгу"
+                      "id": "l1-visual-1-o0",
+                      "text": "Бить баклуши"
                     },
                     {
-                      "id": "l01-q07-o2",
-                      "label": "Б",
-                      "text": "бить баклуши"
+                      "id": "l1-visual-1-o1",
+                      "text": "Заварить кашу"
                     },
                     {
-                      "id": "l01-q07-o3",
-                      "label": "В",
-                      "text": "положить в долгий ящик"
+                      "id": "l1-visual-1-o2",
+                      "text": "Плыть по течению"
                     },
                     {
-                      "id": "l01-q07-o4",
-                      "label": "Г",
-                      "text": "ахиллесова пята"
+                      "id": "l1-visual-1-o3",
+                      "text": "Собаку съесть"
                     }
                   ],
                   "correct": [
-                    "l01-q07-o1"
-                  ]
+                    "l1-visual-1-o3"
+                  ],
+                  "points": 1
                 },
                 {
-                  "id": "l01-q08",
-                  "source_task_no": 8,
-                  "prompt_md": "Почему сопоставление русской и казахской фразеологии имеет значение для изучения фразеологической системы?\n\nВыберите все правильные положения:",
-                  "points": 1,
-                  "type": "multiple_choice",
+                  "id": "l1-visual-2",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l01-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-134"
+                  },
                   "options": [
                     {
-                      "id": "l01-q08-o1",
-                      "label": "А",
-                      "text": "позволяет выявить общие черты"
+                      "id": "l1-visual-2-o0",
+                      "text": "Заварить кашу"
                     },
                     {
-                      "id": "l01-q08-o2",
-                      "label": "Б",
-                      "text": "позволяет выявить национально-специфические особенности"
+                      "id": "l1-visual-2-o1",
+                      "text": "Плыть по течению"
                     },
                     {
-                      "id": "l01-q08-o3",
-                      "label": "В",
-                      "text": "позволяет отказаться от изучения семантики"
+                      "id": "l1-visual-2-o2",
+                      "text": "Бить баклуши"
                     },
                     {
-                      "id": "l01-q08-o4",
-                      "label": "Г",
-                      "text": "позволяет сопоставить способы концептуализации действительности"
+                      "id": "l1-visual-2-o3",
+                      "text": "Собаку съесть"
                     }
                   ],
                   "correct": [
-                    "l01-q08-o1",
-                    "l01-q08-o2",
-                    "l01-q08-o4"
-                  ]
+                    "l1-visual-2-o2"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l1-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l01-3.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-131"
+                  },
+                  "options": [
+                    {
+                      "id": "l1-visual-3-o0",
+                      "text": "Плыть по течению"
+                    },
+                    {
+                      "id": "l1-visual-3-o1",
+                      "text": "Заварить кашу"
+                    },
+                    {
+                      "id": "l1-visual-3-o2",
+                      "text": "Собаку съесть"
+                    },
+                    {
+                      "id": "l1-visual-3-o3",
+                      "text": "Бить баклуши"
+                    }
+                  ],
+                  "correct": [
+                    "l1-visual-3-o1"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l1-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l01-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-041"
+                  },
+                  "options": [
+                    {
+                      "id": "l1-visual-4-o0",
+                      "text": "Плыть по течению"
+                    },
+                    {
+                      "id": "l1-visual-4-o1",
+                      "text": "Собаку съесть"
+                    },
+                    {
+                      "id": "l1-visual-4-o2",
+                      "text": "Бить баклуши"
+                    },
+                    {
+                      "id": "l1-visual-4-o3",
+                      "text": "Заварить кашу"
+                    }
+                  ],
+                  "correct": [
+                    "l1-visual-4-o0"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l1-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l01-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-142"
+                  },
+                  "options": [
+                    {
+                      "id": "l1-visual-5-o0",
+                      "text": "Төбесі көкке жету"
+                    },
+                    {
+                      "id": "l1-visual-5-o1",
+                      "text": "Ит арқасы қиянда"
+                    },
+                    {
+                      "id": "l1-visual-5-o2",
+                      "text": "Собаку съесть"
+                    },
+                    {
+                      "id": "l1-visual-5-o3",
+                      "text": "Ат үстінен қарау"
+                    }
+                  ],
+                  "correct": [
+                    "l1-visual-5-o3"
+                  ],
+                  "points": 1
                 }
               ]
             },
@@ -931,164 +991,162 @@
                   ]
                 },
                 {
-                  "id": "l02-q06",
-                  "source_task_no": 6,
-                  "prompt_md": "Фразеологическая семантика характеризуется прежде всего:",
-                  "points": 1,
+                  "id": "l2-visual-1",
                   "type": "single_choice",
-                  "options": [
-                    {
-                      "id": "l02-q06-o1",
-                      "label": "А",
-                      "text": "только прямым значением компонентов"
-                    },
-                    {
-                      "id": "l02-q06-o2",
-                      "label": "Б",
-                      "text": "целостностью значения"
-                    },
-                    {
-                      "id": "l02-q06-o3",
-                      "label": "В",
-                      "text": "отсутствием коннотации"
-                    },
-                    {
-                      "id": "l02-q06-o4",
-                      "label": "Г",
-                      "text": "свободной заменой компонентов"
-                    }
-                  ],
-                  "correct": [
-                    "l02-q06-o2"
-                  ]
-                },
-                {
-                  "id": "l02-q07",
-                  "source_task_no": 7,
-                  "prompt_md": "Какой признак отличает **«бить баклуши»** от свободного сочетания?",
-                  "points": 1,
-                  "type": "single_choice",
-                  "options": [
-                    {
-                      "id": "l02-q07-o1",
-                      "label": "А",
-                      "text": "возможность произвольно заменить любой компонент"
-                    },
-                    {
-                      "id": "l02-q07-o2",
-                      "label": "Б",
-                      "text": "целостное переносное значение"
-                    },
-                    {
-                      "id": "l02-q07-o3",
-                      "label": "В",
-                      "text": "отсутствие устойчивости"
-                    },
-                    {
-                      "id": "l02-q07-o4",
-                      "label": "Г",
-                      "text": "буквальное значение"
-                    }
-                  ],
-                  "correct": [
-                    "l02-q07-o2"
-                  ]
-                },
-                {
-                  "id": "l02-q08",
-                  "source_task_no": 8,
-                  "prompt_md": "Выберите характеристики, которые могут быть связаны с фразеологизмом:",
-                  "points": 1,
-                  "type": "multiple_choice",
-                  "options": [
-                    {
-                      "id": "l02-q08-o1",
-                      "label": "А",
-                      "text": "экспрессивность"
-                    },
-                    {
-                      "id": "l02-q08-o2",
-                      "label": "Б",
-                      "text": "стилистическая окраска"
-                    },
-                    {
-                      "id": "l02-q08-o3",
-                      "label": "В",
-                      "text": "оценочность"
-                    },
-                    {
-                      "id": "l02-q08-o4",
-                      "label": "Г",
-                      "text": "исключительно нейтральность"
-                    }
-                  ],
-                  "correct": [
-                    "l02-q08-o1",
-                    "l02-q08-o2",
-                    "l02-q08-o3"
-                  ]
-                },
-                {
-                  "id": "l2-photo-1",
-                  "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l2-1.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-s/spustya-rukava",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l02-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-050"
                   },
                   "options": [
                     {
-                      "id": "l2-photo-1-o0",
+                      "id": "l2-visual-1-o0",
                       "text": "Медведь на ухо наступил"
                     },
                     {
-                      "id": "l2-photo-1-o1",
+                      "id": "l2-visual-1-o1",
                       "text": "Как кот наплакал"
                     },
                     {
-                      "id": "l2-photo-1-o2",
-                      "text": "Спустя рукава"
+                      "id": "l2-visual-1-o2",
+                      "text": "Затаив дыхание"
                     },
                     {
-                      "id": "l2-photo-1-o3",
+                      "id": "l2-visual-1-o3",
                       "text": "Семи пядей во лбу"
                     }
                   ],
                   "correct": [
-                    "l2-photo-1-o2"
+                    "l2-visual-1-o2"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l2-photo-2",
+                  "id": "l2-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l2-2.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-m/medved-na-ukho-nastupil",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l02-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-052"
                   },
                   "options": [
                     {
-                      "id": "l2-photo-2-o0",
-                      "text": "Он работал спустя рукава"
+                      "id": "l2-visual-2-o0",
+                      "text": "Как кот наплакал"
                     },
                     {
-                      "id": "l2-photo-2-o1",
-                      "text": "Медведь на ухо наступил"
-                    },
-                    {
-                      "id": "l2-photo-2-o2",
-                      "text": "Спустя рукава"
-                    },
-                    {
-                      "id": "l2-photo-2-o3",
+                      "id": "l2-visual-2-o1",
                       "text": "Семи пядей во лбу"
+                    },
+                    {
+                      "id": "l2-visual-2-o2",
+                      "text": "Затаив дыхание"
+                    },
+                    {
+                      "id": "l2-visual-2-o3",
+                      "text": "Медведь на ухо наступил"
                     }
                   ],
                   "correct": [
-                    "l2-photo-2-o1"
+                    "l2-visual-2-o1"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l2-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l02-3.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-054"
+                  },
+                  "options": [
+                    {
+                      "id": "l2-visual-3-o0",
+                      "text": "Медведь на ухо наступил"
+                    },
+                    {
+                      "id": "l2-visual-3-o1",
+                      "text": "Затаив дыхание"
+                    },
+                    {
+                      "id": "l2-visual-3-o2",
+                      "text": "Семи пядей во лбу"
+                    },
+                    {
+                      "id": "l2-visual-3-o3",
+                      "text": "Как кот наплакал"
+                    }
+                  ],
+                  "correct": [
+                    "l2-visual-3-o0"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l2-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l02-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-073"
+                  },
+                  "options": [
+                    {
+                      "id": "l2-visual-4-o0",
+                      "text": "Затаив дыхание"
+                    },
+                    {
+                      "id": "l2-visual-4-o1",
+                      "text": "Семи пядей во лбу"
+                    },
+                    {
+                      "id": "l2-visual-4-o2",
+                      "text": "Медведь на ухо наступил"
+                    },
+                    {
+                      "id": "l2-visual-4-o3",
+                      "text": "Как кот наплакал"
+                    }
+                  ],
+                  "correct": [
+                    "l2-visual-4-o3"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l2-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l02-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-060"
+                  },
+                  "options": [
+                    {
+                      "id": "l2-visual-5-o0",
+                      "text": "Семи пядей во лбу"
+                    },
+                    {
+                      "id": "l2-visual-5-o1",
+                      "text": "Медведь на ухо наступил"
+                    },
+                    {
+                      "id": "l2-visual-5-o2",
+                      "text": "Золотое сердце"
+                    },
+                    {
+                      "id": "l2-visual-5-o3",
+                      "text": "Затаив дыхание"
+                    }
+                  ],
+                  "correct": [
+                    "l2-visual-5-o2"
                   ],
                   "points": 1
                 }
@@ -1277,7 +1335,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 6,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l03-q01",
@@ -1384,82 +1442,162 @@
                   ]
                 },
                 {
-                  "id": "l03-q06",
-                  "source_task_no": 6,
-                  "prompt_md": "В чем состоит семантическое отличие ФЕ от свободного сочетания?",
-                  "points": 1,
+                  "id": "l3-visual-1",
                   "type": "single_choice",
-                  "options": [
-                    {
-                      "id": "l03-q06-o1",
-                      "label": "А",
-                      "text": "каждый компонент ФЕ всегда имеет самостоятельное прямое значение"
-                    },
-                    {
-                      "id": "l03-q06-o2",
-                      "label": "Б",
-                      "text": "значение ФЕ может формироваться путем переосмысления компонентов"
-                    },
-                    {
-                      "id": "l03-q06-o3",
-                      "label": "В",
-                      "text": "ФЕ не имеет значения"
-                    },
-                    {
-                      "id": "l03-q06-o4",
-                      "label": "Г",
-                      "text": "ФЕ всегда является термином"
-                    }
-                  ],
-                  "correct": [
-                    "l03-q06-o2"
-                  ]
-                },
-                {
-                  "id": "l3-photo-1",
-                  "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l3-1.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-n/ne-pokladaya-ruk",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l03-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-065"
                   },
                   "options": [
                     {
-                      "id": "l3-photo-1-o0",
-                      "text": "Ему намылили шею за опоздание"
+                      "id": "l3-visual-1-o0",
+                      "text": "Намылить шею"
                     },
                     {
-                      "id": "l3-photo-1-o1",
-                      "text": "Он работал не покладая рук"
+                      "id": "l3-visual-1-o1",
+                      "text": "Протянуть ноги"
+                    },
+                    {
+                      "id": "l3-visual-1-o2",
+                      "text": "Собака на сене"
+                    },
+                    {
+                      "id": "l3-visual-1-o3",
+                      "text": "Не покладая рук"
                     }
                   ],
                   "correct": [
-                    "l3-photo-1-o1"
+                    "l3-visual-1-o1"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l3-photo-2",
+                  "id": "l3-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l3-2.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-sha/sheyu-namylit",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l03-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-067"
                   },
                   "options": [
                     {
-                      "id": "l3-photo-2-o0",
-                      "text": "Ему намылили шею за опоздание"
+                      "id": "l3-visual-2-o0",
+                      "text": "Собака на сене"
                     },
                     {
-                      "id": "l3-photo-2-o1",
-                      "text": "Он работал не покладая рук"
+                      "id": "l3-visual-2-o1",
+                      "text": "Протянуть ноги"
+                    },
+                    {
+                      "id": "l3-visual-2-o2",
+                      "text": "Не покладая рук"
+                    },
+                    {
+                      "id": "l3-visual-2-o3",
+                      "text": "Намылить шею"
                     }
                   ],
                   "correct": [
-                    "l3-photo-2-o0"
+                    "l3-visual-2-o0"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l3-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l03-3.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-069"
+                  },
+                  "options": [
+                    {
+                      "id": "l3-visual-3-o0",
+                      "text": "Протянуть ноги"
+                    },
+                    {
+                      "id": "l3-visual-3-o1",
+                      "text": "Собака на сене"
+                    },
+                    {
+                      "id": "l3-visual-3-o2",
+                      "text": "Намылить шею"
+                    },
+                    {
+                      "id": "l3-visual-3-o3",
+                      "text": "Не покладая рук"
+                    }
+                  ],
+                  "correct": [
+                    "l3-visual-3-o3"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l3-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l03-4.jpg",
+                    "credit": "Иллюстрация создана для курса",
+                    "asset_id": "neck"
+                  },
+                  "options": [
+                    {
+                      "id": "l3-visual-4-o0",
+                      "text": "Собака на сене"
+                    },
+                    {
+                      "id": "l3-visual-4-o1",
+                      "text": "Не покладая рук"
+                    },
+                    {
+                      "id": "l3-visual-4-o2",
+                      "text": "Намылить шею"
+                    },
+                    {
+                      "id": "l3-visual-4-o3",
+                      "text": "Протянуть ноги"
+                    }
+                  ],
+                  "correct": [
+                    "l3-visual-4-o2"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l3-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l03-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-072"
+                  },
+                  "options": [
+                    {
+                      "id": "l3-visual-5-o0",
+                      "text": "Не покладая рук"
+                    },
+                    {
+                      "id": "l3-visual-5-o1",
+                      "text": "Қол жуу"
+                    },
+                    {
+                      "id": "l3-visual-5-o2",
+                      "text": "Протянуть ноги"
+                    },
+                    {
+                      "id": "l3-visual-5-o3",
+                      "text": "Собака на сене"
+                    }
+                  ],
+                  "correct": [
+                    "l3-visual-5-o1"
                   ],
                   "points": 1
                 }
@@ -1667,7 +1805,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 7,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l04-q01",
@@ -1699,73 +1837,6 @@
                   ],
                   "correct": [
                     "l04-q01-o1"
-                  ]
-                },
-                {
-                  "id": "l04-q02",
-                  "source_task_no": 2,
-                  "prompt_md": "Выберите основания классификации ФЕ:",
-                  "points": 1,
-                  "type": "multiple_choice",
-                  "options": [
-                    {
-                      "id": "l04-q02-o1",
-                      "label": "А",
-                      "text": "семантическое"
-                    },
-                    {
-                      "id": "l04-q02-o2",
-                      "label": "Б",
-                      "text": "грамматическое"
-                    },
-                    {
-                      "id": "l04-q02-o3",
-                      "label": "В",
-                      "text": "стилистическое"
-                    },
-                    {
-                      "id": "l04-q02-o4",
-                      "label": "Г",
-                      "text": "генетическое"
-                    }
-                  ],
-                  "correct": [
-                    "l04-q02-o1",
-                    "l04-q02-o2",
-                    "l04-q02-o3",
-                    "l04-q02-o4"
-                  ]
-                },
-                {
-                  "id": "l04-q04",
-                  "source_task_no": 4,
-                  "prompt_md": "Что осложняет классификацию ФЕ?",
-                  "points": 1,
-                  "type": "single_choice",
-                  "options": [
-                    {
-                      "id": "l04-q04-o1",
-                      "label": "А",
-                      "text": "многоаспектность фразеологизма"
-                    },
-                    {
-                      "id": "l04-q04-o2",
-                      "label": "Б",
-                      "text": "отсутствие значения"
-                    },
-                    {
-                      "id": "l04-q04-o3",
-                      "label": "В",
-                      "text": "исключительно буквальное значение"
-                    },
-                    {
-                      "id": "l04-q04-o4",
-                      "label": "Г",
-                      "text": "отсутствие грамматической организации"
-                    }
-                  ],
-                  "correct": [
-                    "l04-q04-o1"
                   ]
                 },
                 {
@@ -1833,66 +1904,162 @@
                   ]
                 },
                 {
-                  "id": "l4-photo-1",
+                  "id": "l4-visual-1",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l4-1.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-k/kameni-za-pazuhoy",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l04-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-136"
                   },
                   "options": [
                     {
-                      "id": "l4-photo-1-o0",
-                      "text": "Держать камень за пазухой"
-                    },
-                    {
-                      "id": "l4-photo-1-o1",
+                      "id": "l4-visual-1-o0",
                       "text": "Попасть впросак"
                     },
                     {
-                      "id": "l4-photo-1-o2",
-                      "text": "Зарыть талант в землю"
+                      "id": "l4-visual-1-o1",
+                      "text": "Плыть по течению"
                     },
                     {
-                      "id": "l4-photo-1-o3",
+                      "id": "l4-visual-1-o2",
                       "text": "Закадычный друг"
+                    },
+                    {
+                      "id": "l4-visual-1-o3",
+                      "text": "Бить баклуши"
                     }
                   ],
                   "correct": [
-                    "l4-photo-1-o0"
+                    "l4-visual-1-o0"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l4-photo-2",
+                  "id": "l4-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l4-2.jpg",
-                    "source": "https://fraze.ru/index.php/frazeologizm/na-bukvu-z/zaryti-talant-v-zemliu",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l04-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-041"
                   },
                   "options": [
                     {
-                      "id": "l4-photo-2-o0",
+                      "id": "l4-visual-2-o0",
                       "text": "Попасть впросак"
                     },
                     {
-                      "id": "l4-photo-2-o1",
-                      "text": "Держать камень за пазухой"
-                    },
-                    {
-                      "id": "l4-photo-2-o2",
+                      "id": "l4-visual-2-o1",
                       "text": "Закадычный друг"
                     },
                     {
-                      "id": "l4-photo-2-o3",
-                      "text": "Зарыть талант в землю"
+                      "id": "l4-visual-2-o2",
+                      "text": "Бить баклуши"
+                    },
+                    {
+                      "id": "l4-visual-2-o3",
+                      "text": "Плыть по течению"
                     }
                   ],
                   "correct": [
-                    "l4-photo-2-o3"
+                    "l4-visual-2-o3"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l4-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l04-3.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-042"
+                  },
+                  "options": [
+                    {
+                      "id": "l4-visual-3-o0",
+                      "text": "Плыть по течению"
+                    },
+                    {
+                      "id": "l4-visual-3-o1",
+                      "text": "Бить баклуши"
+                    },
+                    {
+                      "id": "l4-visual-3-o2",
+                      "text": "Закадычный друг"
+                    },
+                    {
+                      "id": "l4-visual-3-o3",
+                      "text": "Попасть впросак"
+                    }
+                  ],
+                  "correct": [
+                    "l4-visual-3-o2"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l4-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l04-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-134"
+                  },
+                  "options": [
+                    {
+                      "id": "l4-visual-4-o0",
+                      "text": "Закадычный друг"
+                    },
+                    {
+                      "id": "l4-visual-4-o1",
+                      "text": "Бить баклуши"
+                    },
+                    {
+                      "id": "l4-visual-4-o2",
+                      "text": "Попасть впросак"
+                    },
+                    {
+                      "id": "l4-visual-4-o3",
+                      "text": "Плыть по течению"
+                    }
+                  ],
+                  "correct": [
+                    "l4-visual-4-o1"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l4-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l04-5.jpg",
+                    "credit": "Иллюстрация создана для курса",
+                    "asset_id": "stone"
+                  },
+                  "options": [
+                    {
+                      "id": "l4-visual-5-o0",
+                      "text": "Держать камень за пазухой"
+                    },
+                    {
+                      "id": "l4-visual-5-o1",
+                      "text": "Попасть впросак"
+                    },
+                    {
+                      "id": "l4-visual-5-o2",
+                      "text": "Плыть по течению"
+                    },
+                    {
+                      "id": "l4-visual-5-o3",
+                      "text": "Закадычный друг"
+                    }
+                  ],
+                  "correct": [
+                    "l4-visual-5-o0"
                   ],
                   "points": 1
                 }
@@ -2128,7 +2295,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 5,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l05-q01",
@@ -2235,66 +2402,162 @@
                   ]
                 },
                 {
-                  "id": "l5-photo-1",
+                  "id": "l5-visual-1",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l5-1.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-z/zolotye-ruki",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l05-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-084"
                   },
                   "options": [
                     {
-                      "id": "l5-photo-1-o0",
+                      "id": "l5-visual-1-o0",
                       "text": "Как кот наплакал"
                     },
                     {
-                      "id": "l5-photo-1-o1",
+                      "id": "l5-visual-1-o1",
                       "text": "По пальцам пересчитать"
                     },
                     {
-                      "id": "l5-photo-1-o2",
-                      "text": "Светлая голова"
+                      "id": "l5-visual-1-o2",
+                      "text": "Без царя в голове"
                     },
                     {
-                      "id": "l5-photo-1-o3",
+                      "id": "l5-visual-1-o3",
                       "text": "Золотые руки"
                     }
                   ],
                   "correct": [
-                    "l5-photo-1-o3"
+                    "l5-visual-1-o3"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l5-photo-2",
+                  "id": "l5-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l5-2.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-k/kot-naplakal",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l05-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-073"
                   },
                   "options": [
                     {
-                      "id": "l5-photo-2-o0",
-                      "text": "По пальцам пересчитать"
+                      "id": "l5-visual-2-o0",
+                      "text": "Без царя в голове"
                     },
                     {
-                      "id": "l5-photo-2-o1",
-                      "text": "Светлая голова"
+                      "id": "l5-visual-2-o1",
+                      "text": "Быть на седьмом небе"
                     },
                     {
-                      "id": "l5-photo-2-o2",
+                      "id": "l5-visual-2-o2",
                       "text": "Как кот наплакал"
                     },
                     {
-                      "id": "l5-photo-2-o3",
+                      "id": "l5-visual-2-o3",
                       "text": "Золотые руки"
                     }
                   ],
                   "correct": [
-                    "l5-photo-2-o2"
+                    "l5-visual-2-o2"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l5-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l05-3.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-074"
+                  },
+                  "options": [
+                    {
+                      "id": "l5-visual-3-o0",
+                      "text": "Быть на седьмом небе"
+                    },
+                    {
+                      "id": "l5-visual-3-o1",
+                      "text": "По пальцам пересчитать"
+                    },
+                    {
+                      "id": "l5-visual-3-o2",
+                      "text": "Золотые руки"
+                    },
+                    {
+                      "id": "l5-visual-3-o3",
+                      "text": "Без царя в голове"
+                    }
+                  ],
+                  "correct": [
+                    "l5-visual-3-o1"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l5-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l05-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-089"
+                  },
+                  "options": [
+                    {
+                      "id": "l5-visual-4-o0",
+                      "text": "Қара жүрек"
+                    },
+                    {
+                      "id": "l5-visual-4-o1",
+                      "text": "Ақ көңіл"
+                    },
+                    {
+                      "id": "l5-visual-4-o2",
+                      "text": "Төбесі көкке жету"
+                    },
+                    {
+                      "id": "l5-visual-4-o3",
+                      "text": "О дүниеге аттану"
+                    }
+                  ],
+                  "correct": [
+                    "l5-visual-4-o0"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l5-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l05-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-086"
+                  },
+                  "options": [
+                    {
+                      "id": "l5-visual-5-o0",
+                      "text": "Қара жүрек"
+                    },
+                    {
+                      "id": "l5-visual-5-o1",
+                      "text": "Төбесі көкке жету"
+                    },
+                    {
+                      "id": "l5-visual-5-o2",
+                      "text": "О дүниеге аттану"
+                    },
+                    {
+                      "id": "l5-visual-5-o3",
+                      "text": "Ақ көңіл"
+                    }
+                  ],
+                  "correct": [
+                    "l5-visual-5-o3"
                   ],
                   "points": 1
                 }
@@ -2500,7 +2763,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 5,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l06-q01",
@@ -2537,7 +2800,7 @@
                 {
                   "id": "l06-q02",
                   "source_task_no": 2,
-                  "prompt_md": "Выберите структурные типы, представленные в лекции:",
+                  "prompt_md": "Выберите структурные типы:",
                   "points": 1,
                   "type": "multiple_choice",
                   "options": [
@@ -2602,66 +2865,162 @@
                   ]
                 },
                 {
-                  "id": "l6-photo-1",
+                  "id": "l6-visual-1",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l6-1.jpg",
-                    "source": "https://fraze.ru/index.php/frazeologizm/na-bukvu-v/volk-v-oveciey-shkure",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l06-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-091"
                   },
                   "options": [
                     {
-                      "id": "l6-photo-1-o0",
-                      "text": "Сломя голову"
+                      "id": "l6-visual-1-o0",
+                      "text": "Руки не доходят"
                     },
                     {
-                      "id": "l6-photo-1-o1",
-                      "text": "Бить баклуши"
+                      "id": "l6-visual-1-o1",
+                      "text": "Умывать руки"
                     },
                     {
-                      "id": "l6-photo-1-o2",
-                      "text": "Волк в овечьей шкуре"
-                    },
-                    {
-                      "id": "l6-photo-1-o3",
+                      "id": "l6-visual-1-o2",
                       "text": "Брать себя в руки"
+                    },
+                    {
+                      "id": "l6-visual-1-o3",
+                      "text": "Ахиллесова пята"
                     }
                   ],
                   "correct": [
-                    "l6-photo-1-o2"
+                    "l6-visual-1-o2"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l6-photo-2",
+                  "id": "l6-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l6-2.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-l/lomat-golovu",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l06-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-092"
                   },
                   "options": [
                     {
-                      "id": "l6-photo-2-o0",
-                      "text": "Сломя голову"
+                      "id": "l6-visual-2-o0",
+                      "text": "Умывать руки"
                     },
                     {
-                      "id": "l6-photo-2-o1",
-                      "text": "Ломать голову"
+                      "id": "l6-visual-2-o1",
+                      "text": "Ахиллесова пята"
                     },
                     {
-                      "id": "l6-photo-2-o2",
-                      "text": "Волк в овечьей шкуре"
+                      "id": "l6-visual-2-o2",
+                      "text": "Брать себя в руки"
                     },
                     {
-                      "id": "l6-photo-2-o3",
+                      "id": "l6-visual-2-o3",
+                      "text": "Руки не доходят"
+                    }
+                  ],
+                  "correct": [
+                    "l6-visual-2-o1"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l6-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l06-3.jpg",
+                    "credit": "Иллюстрация создана для курса",
+                    "asset_id": "hands-not-reached"
+                  },
+                  "options": [
+                    {
+                      "id": "l6-visual-3-o0",
+                      "text": "Руки не доходят"
+                    },
+                    {
+                      "id": "l6-visual-3-o1",
+                      "text": "Брать себя в руки"
+                    },
+                    {
+                      "id": "l6-visual-3-o2",
+                      "text": "Ахиллесова пята"
+                    },
+                    {
+                      "id": "l6-visual-3-o3",
+                      "text": "Умывать руки"
+                    }
+                  ],
+                  "correct": [
+                    "l6-visual-3-o0"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l6-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l06-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-058"
+                  },
+                  "options": [
+                    {
+                      "id": "l6-visual-4-o0",
+                      "text": "Брать себя в руки"
+                    },
+                    {
+                      "id": "l6-visual-4-o1",
+                      "text": "Ахиллесова пята"
+                    },
+                    {
+                      "id": "l6-visual-4-o2",
+                      "text": "Руки не доходят"
+                    },
+                    {
+                      "id": "l6-visual-4-o3",
+                      "text": "Умывать руки"
+                    }
+                  ],
+                  "correct": [
+                    "l6-visual-4-o3"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l6-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l06-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-084"
+                  },
+                  "options": [
+                    {
+                      "id": "l6-visual-5-o0",
+                      "text": "Ахиллесова пята"
+                    },
+                    {
+                      "id": "l6-visual-5-o1",
+                      "text": "Руки не доходят"
+                    },
+                    {
+                      "id": "l6-visual-5-o2",
+                      "text": "Золотые руки"
+                    },
+                    {
+                      "id": "l6-visual-5-o3",
                       "text": "Брать себя в руки"
                     }
                   ],
                   "correct": [
-                    "l6-photo-2-o1"
+                    "l6-visual-5-o2"
                   ],
                   "points": 1
                 }
@@ -2851,7 +3210,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 6,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l07-q01",
@@ -2888,7 +3247,7 @@
                 {
                   "id": "l07-q02",
                   "source_task_no": 2,
-                  "prompt_md": "Выберите системные отношения, рассматриваемые в лекции:",
+                  "prompt_md": "Выберите системные отношения:",
                   "points": 1,
                   "type": "multiple_choice",
                   "options": [
@@ -2952,98 +3311,162 @@
                   ]
                 },
                 {
-                  "id": "l07-q05",
-                  "source_task_no": 5,
-                  "prompt_md": "Определите тип варианта:\n\n«повесив нос – вешать нос».",
-                  "points": 1,
+                  "id": "l7-visual-1",
                   "type": "single_choice",
-                  "options": [
-                    {
-                      "id": "l07-q05-o1",
-                      "label": "А",
-                      "text": "грамматический вариант"
-                    },
-                    {
-                      "id": "l07-q05-o2",
-                      "label": "Б",
-                      "text": "лексический синоним"
-                    },
-                    {
-                      "id": "l07-q05-o3",
-                      "label": "В",
-                      "text": "антоним"
-                    },
-                    {
-                      "id": "l07-q05-o4",
-                      "label": "Г",
-                      "text": "омоним"
-                    }
-                  ],
-                  "correct": [
-                    "l07-q05-o1"
-                  ]
-                },
-                {
-                  "id": "l7-photo-1",
-                  "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l7-1.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-d/deneg-kury-ne-klyuyut",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l07-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-001"
                   },
                   "options": [
                     {
-                      "id": "l7-photo-1-o0",
-                      "text": "Задать дёру"
+                      "id": "l7-visual-1-o0",
+                      "text": "У разбитого корыта"
                     },
                     {
-                      "id": "l7-photo-1-o1",
-                      "text": "Куры не клюют"
-                    },
-                    {
-                      "id": "l7-photo-1-o2",
+                      "id": "l7-visual-1-o1",
                       "text": "Хоть пруд пруди"
                     },
                     {
-                      "id": "l7-photo-1-o3",
+                      "id": "l7-visual-1-o2",
                       "text": "Вагон и маленькая тележка"
+                    },
+                    {
+                      "id": "l7-visual-1-o3",
+                      "text": "С тяжёлым сердцем"
                     }
                   ],
                   "correct": [
-                    "l7-photo-1-o1"
+                    "l7-visual-1-o1"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l7-photo-2",
+                  "id": "l7-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l7-2.jpg",
-                    "source": "https://www.fraze.ru/index.php/aforizm/aforizmy-na-bukvu-o/ostatsya-u-razbitogo-koryta",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l07-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-004"
                   },
                   "options": [
                     {
-                      "id": "l7-photo-2-o0",
-                      "text": "У разбитого корыта"
+                      "id": "l7-visual-2-o0",
+                      "text": "Вагон и маленькая тележка"
                     },
                     {
-                      "id": "l7-photo-2-o1",
+                      "id": "l7-visual-2-o1",
                       "text": "Хоть пруд пруди"
                     },
                     {
-                      "id": "l7-photo-2-o2",
-                      "text": "Куры не клюют"
+                      "id": "l7-visual-2-o2",
+                      "text": "С тяжёлым сердцем"
                     },
                     {
-                      "id": "l7-photo-2-o3",
-                      "text": "Вагон и маленькая тележка"
+                      "id": "l7-visual-2-o3",
+                      "text": "У разбитого корыта"
                     }
                   ],
                   "correct": [
-                    "l7-photo-2-o0"
+                    "l7-visual-2-o0"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l7-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l07-3.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-019"
+                  },
+                  "options": [
+                    {
+                      "id": "l7-visual-3-o0",
+                      "text": "Хоть пруд пруди"
+                    },
+                    {
+                      "id": "l7-visual-3-o1",
+                      "text": "Вагон и маленькая тележка"
+                    },
+                    {
+                      "id": "l7-visual-3-o2",
+                      "text": "У разбитого корыта"
+                    },
+                    {
+                      "id": "l7-visual-3-o3",
+                      "text": "С тяжёлым сердцем"
+                    }
+                  ],
+                  "correct": [
+                    "l7-visual-3-o3"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l7-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l07-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-018"
+                  },
+                  "options": [
+                    {
+                      "id": "l7-visual-4-o0",
+                      "text": "Вагон и маленькая тележка"
+                    },
+                    {
+                      "id": "l7-visual-4-o1",
+                      "text": "С тяжёлым сердцем"
+                    },
+                    {
+                      "id": "l7-visual-4-o2",
+                      "text": "У разбитого корыта"
+                    },
+                    {
+                      "id": "l7-visual-4-o3",
+                      "text": "Хоть пруд пруди"
+                    }
+                  ],
+                  "correct": [
+                    "l7-visual-4-o2"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l7-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l07-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-006"
+                  },
+                  "options": [
+                    {
+                      "id": "l7-visual-5-o0",
+                      "text": "Сүт пісірім уақытта"
+                    },
+                    {
+                      "id": "l7-visual-5-o1",
+                      "text": "Көл-көсір"
+                    },
+                    {
+                      "id": "l7-visual-5-o2",
+                      "text": "Ұшан-теңіз"
+                    },
+                    {
+                      "id": "l7-visual-5-o3",
+                      "text": "Қас қаққанша"
+                    }
+                  ],
+                  "correct": [
+                    "l7-visual-5-o1"
                   ],
                   "points": 1
                 }
@@ -3310,7 +3733,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 7,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l08-q01",
@@ -3411,130 +3834,162 @@
                   ]
                 },
                 {
-                  "id": "l08-q05",
-                  "source_task_no": 5,
-                  "prompt_md": "Калькирование – это:",
-                  "points": 1,
+                  "id": "l8-visual-1",
                   "type": "single_choice",
-                  "options": [
-                    {
-                      "id": "l08-q05-o1",
-                      "label": "А",
-                      "text": "удаление компонента ФЕ"
-                    },
-                    {
-                      "id": "l08-q05-o2",
-                      "label": "Б",
-                      "text": "покомпонентный перевод иноязычного оборота средствами другого языка"
-                    },
-                    {
-                      "id": "l08-q05-o3",
-                      "label": "В",
-                      "text": "создание нового слова"
-                    },
-                    {
-                      "id": "l08-q05-o4",
-                      "label": "Г",
-                      "text": "свободный пересказ текста"
-                    }
-                  ],
-                  "correct": [
-                    "l08-q05-o2"
-                  ]
-                },
-                {
-                  "id": "l08-q06",
-                  "source_task_no": 6,
-                  "prompt_md": "Определите тип:\n\n«дать зеленый свет» → «жасыл жарық беру».",
-                  "points": 1,
-                  "type": "single_choice",
-                  "options": [
-                    {
-                      "id": "l08-q06-o1",
-                      "label": "А",
-                      "text": "калькирование"
-                    },
-                    {
-                      "id": "l08-q06-o2",
-                      "label": "Б",
-                      "text": "антонимия"
-                    },
-                    {
-                      "id": "l08-q06-o3",
-                      "label": "В",
-                      "text": "омонимия"
-                    },
-                    {
-                      "id": "l08-q06-o4",
-                      "label": "Г",
-                      "text": "вариантность"
-                    }
-                  ],
-                  "correct": [
-                    "l08-q06-o1"
-                  ]
-                },
-                {
-                  "id": "l8-photo-1",
-                  "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l8-1.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-sha/shito-belymi-nitkami",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l08-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-131"
                   },
                   "options": [
                     {
-                      "id": "l8-photo-1-o0",
-                      "text": "Шито белыми нитками"
-                    },
-                    {
-                      "id": "l8-photo-1-o1",
+                      "id": "l8-visual-1-o0",
                       "text": "Заварить кашу"
                     },
                     {
-                      "id": "l8-photo-1-o2",
-                      "text": "Қой аузынан шөп алмас"
+                      "id": "l8-visual-1-o1",
+                      "text": "Расхлёбывать кашу"
                     },
                     {
-                      "id": "l8-photo-1-o3",
+                      "id": "l8-visual-1-o2",
                       "text": "Ахиллесова пята"
+                    },
+                    {
+                      "id": "l8-visual-1-o3",
+                      "text": "Мухи не обидит"
                     }
                   ],
                   "correct": [
-                    "l8-photo-1-o0"
+                    "l8-visual-1-o0"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l8-photo-2",
+                  "id": "l8-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l8-2.jpg",
-                    "source": "https://fraze.ru/index.php/frazeologizm/na-bukvu-s/sizifov-trud",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l08-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-022"
                   },
                   "options": [
                     {
-                      "id": "l8-photo-2-o0",
+                      "id": "l8-visual-2-o0",
                       "text": "Заварить кашу"
                     },
                     {
-                      "id": "l8-photo-2-o1",
-                      "text": "Шито белыми нитками"
+                      "id": "l8-visual-2-o1",
+                      "text": "Ахиллесова пята"
                     },
                     {
-                      "id": "l8-photo-2-o2",
-                      "text": "Қой аузынан шөп алмас"
+                      "id": "l8-visual-2-o2",
+                      "text": "Мухи не обидит"
                     },
                     {
-                      "id": "l8-photo-2-o3",
-                      "text": "Сизифов труд"
+                      "id": "l8-visual-2-o3",
+                      "text": "Расхлёбывать кашу"
                     }
                   ],
                   "correct": [
-                    "l8-photo-2-o3"
+                    "l8-visual-2-o3"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l8-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l08-3.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-142"
+                  },
+                  "options": [
+                    {
+                      "id": "l8-visual-3-o0",
+                      "text": "Заварить кашу"
+                    },
+                    {
+                      "id": "l8-visual-3-o1",
+                      "text": "Расхлёбывать кашу"
+                    },
+                    {
+                      "id": "l8-visual-3-o2",
+                      "text": "Ат үстінен қарау"
+                    },
+                    {
+                      "id": "l8-visual-3-o3",
+                      "text": "Қой аузынан шөп алмас"
+                    }
+                  ],
+                  "correct": [
+                    "l8-visual-3-o2"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l8-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l08-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-092"
+                  },
+                  "options": [
+                    {
+                      "id": "l8-visual-4-o0",
+                      "text": "Мухи не обидит"
+                    },
+                    {
+                      "id": "l8-visual-4-o1",
+                      "text": "Ахиллесова пята"
+                    },
+                    {
+                      "id": "l8-visual-4-o2",
+                      "text": "Заварить кашу"
+                    },
+                    {
+                      "id": "l8-visual-4-o3",
+                      "text": "Расхлёбывать кашу"
+                    }
+                  ],
+                  "correct": [
+                    "l8-visual-4-o1"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l8-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l08-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-144"
+                  },
+                  "options": [
+                    {
+                      "id": "l8-visual-5-o0",
+                      "text": "Қой аузынан шөп алмас"
+                    },
+                    {
+                      "id": "l8-visual-5-o1",
+                      "text": "Ат үстінен қарау"
+                    },
+                    {
+                      "id": "l8-visual-5-o2",
+                      "text": "Заварить кашу"
+                    },
+                    {
+                      "id": "l8-visual-5-o3",
+                      "text": "Расхлёбывать кашу"
+                    }
+                  ],
+                  "correct": [
+                    "l8-visual-5-o0"
                   ],
                   "points": 1
                 }
@@ -3727,7 +4182,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 6,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l09-q01",
@@ -3828,100 +4283,162 @@
                   ]
                 },
                 {
-                  "id": "l09-q05",
-                  "source_task_no": 5,
-                  "prompt_md": "Выберите прагматические функции ФЕ:",
-                  "points": 1,
-                  "type": "multiple_choice",
-                  "options": [
-                    {
-                      "id": "l09-q05-o1",
-                      "label": "А",
-                      "text": "компрессия смысла"
-                    },
-                    {
-                      "id": "l09-q05-o2",
-                      "label": "Б",
-                      "text": "апелляция к фоновому знанию"
-                    },
-                    {
-                      "id": "l09-q05-o3",
-                      "label": "В",
-                      "text": "эмоциональное воздействие"
-                    },
-                    {
-                      "id": "l09-q05-o4",
-                      "label": "Г",
-                      "text": "устранение контекста"
-                    }
-                  ],
-                  "correct": [
-                    "l09-q05-o1",
-                    "l09-q05-o2",
-                    "l09-q05-o3"
-                  ]
-                },
-                {
-                  "id": "l9-photo-1",
+                  "id": "l9-visual-1",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l9-1.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-r/razvesit-ushi",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l09-1.jpg",
+                    "credit": "Иллюстрация создана для курса",
+                    "asset_id": "eavesdrop"
                   },
                   "options": [
                     {
-                      "id": "l9-photo-1-o0",
-                      "text": "Намылить шею"
-                    },
-                    {
-                      "id": "l9-photo-1-o1",
+                      "id": "l9-visual-1-o0",
                       "text": "Сесть в галошу"
                     },
                     {
-                      "id": "l9-photo-1-o2",
-                      "text": "Хранить олимпийское спокойствие"
+                      "id": "l9-visual-1-o1",
+                      "text": "Намылить шею"
                     },
                     {
-                      "id": "l9-photo-1-o3",
+                      "id": "l9-visual-1-o2",
+                      "text": "Не покладая рук"
+                    },
+                    {
+                      "id": "l9-visual-1-o3",
                       "text": "Развесить уши"
                     }
                   ],
                   "correct": [
-                    "l9-photo-1-o3"
+                    "l9-visual-1-o3"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l9-photo-2",
+                  "id": "l9-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l9-2.jpg",
-                    "source": "https://fraze.ru/index.php/frazeologizm/na-bukvu-s/sest-v-kaloshu-galoshu",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l09-2.jpg",
+                    "credit": "Иллюстрация создана для курса",
+                    "asset_id": "galosh"
                   },
                   "options": [
                     {
-                      "id": "l9-photo-2-o0",
+                      "id": "l9-visual-2-o0",
                       "text": "Намылить шею"
                     },
                     {
-                      "id": "l9-photo-2-o1",
-                      "text": "Хранить олимпийское спокойствие"
+                      "id": "l9-visual-2-o1",
+                      "text": "Не покладая рук"
                     },
                     {
-                      "id": "l9-photo-2-o2",
+                      "id": "l9-visual-2-o2",
                       "text": "Сесть в галошу"
                     },
                     {
-                      "id": "l9-photo-2-o3",
+                      "id": "l9-visual-2-o3",
                       "text": "Развесить уши"
                     }
                   ],
                   "correct": [
-                    "l9-photo-2-o2"
+                    "l9-visual-2-o2"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l9-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l09-3.jpg",
+                    "credit": "Иллюстрация создана для курса",
+                    "asset_id": "neck"
+                  },
+                  "options": [
+                    {
+                      "id": "l9-visual-3-o0",
+                      "text": "Не покладая рук"
+                    },
+                    {
+                      "id": "l9-visual-3-o1",
+                      "text": "Намылить шею"
+                    },
+                    {
+                      "id": "l9-visual-3-o2",
+                      "text": "Развесить уши"
+                    },
+                    {
+                      "id": "l9-visual-3-o3",
+                      "text": "Сесть в галошу"
+                    }
+                  ],
+                  "correct": [
+                    "l9-visual-3-o1"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l9-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l09-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-069"
+                  },
+                  "options": [
+                    {
+                      "id": "l9-visual-4-o0",
+                      "text": "Не покладая рук"
+                    },
+                    {
+                      "id": "l9-visual-4-o1",
+                      "text": "Развесить уши"
+                    },
+                    {
+                      "id": "l9-visual-4-o2",
+                      "text": "Сесть в галошу"
+                    },
+                    {
+                      "id": "l9-visual-4-o3",
+                      "text": "Намылить шею"
+                    }
+                  ],
+                  "correct": [
+                    "l9-visual-4-o0"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l9-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l09-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-087"
+                  },
+                  "options": [
+                    {
+                      "id": "l9-visual-5-o0",
+                      "text": "Развесить уши"
+                    },
+                    {
+                      "id": "l9-visual-5-o1",
+                      "text": "Сесть в галошу"
+                    },
+                    {
+                      "id": "l9-visual-5-o2",
+                      "text": "Намылить шею"
+                    },
+                    {
+                      "id": "l9-visual-5-o3",
+                      "text": "Без царя в голове"
+                    }
+                  ],
+                  "correct": [
+                    "l9-visual-5-o3"
                   ],
                   "points": 1
                 }
@@ -4188,7 +4705,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 7,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l10-q01",
@@ -4293,130 +4810,162 @@
                   ]
                 },
                 {
-                  "id": "l10-q04",
-                  "source_task_no": 4,
-                  "prompt_md": "Что является одной из специфических проблем фразеографии?",
-                  "points": 1,
+                  "id": "l10-visual-1",
                   "type": "single_choice",
-                  "options": [
-                    {
-                      "id": "l10-q04-o1",
-                      "label": "А",
-                      "text": "выбор заголовочной единицы"
-                    },
-                    {
-                      "id": "l10-q04-o2",
-                      "label": "Б",
-                      "text": "определение цвета страниц словаря"
-                    },
-                    {
-                      "id": "l10-q04-o3",
-                      "label": "В",
-                      "text": "отсутствие необходимости толкования"
-                    },
-                    {
-                      "id": "l10-q04-o4",
-                      "label": "Г",
-                      "text": "отказ от контекстов"
-                    }
-                  ],
-                  "correct": [
-                    "l10-q04-o1"
-                  ]
-                },
-                {
-                  "id": "l10-q06",
-                  "source_task_no": 6,
-                  "prompt_md": "Какой словарь особенно важен для сопоставительного анализа русской и казахской фразеологии?",
-                  "points": 1,
-                  "type": "single_choice",
-                  "options": [
-                    {
-                      "id": "l10-q06-o1",
-                      "label": "А",
-                      "text": "одноязычный орфографический"
-                    },
-                    {
-                      "id": "l10-q06-o2",
-                      "label": "Б",
-                      "text": "двуязычный фразеологический"
-                    },
-                    {
-                      "id": "l10-q06-o3",
-                      "label": "В",
-                      "text": "этимологический словарь отдельных слов"
-                    },
-                    {
-                      "id": "l10-q06-o4",
-                      "label": "Г",
-                      "text": "словарь иностранных слов"
-                    }
-                  ],
-                  "correct": [
-                    "l10-q06-o2"
-                  ]
-                },
-                {
-                  "id": "l10-photo-1",
-                  "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l10-1.jpg",
-                    "source": "https://fraze.ru/index.php/frazeologizm/na-bukvu-v/vzyat-sebya-v-ruki",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l10-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-091"
                   },
                   "options": [
                     {
-                      "id": "l10-photo-1-o0",
+                      "id": "l10-visual-1-o0",
+                      "text": "Делать из мухи слона"
+                    },
+                    {
+                      "id": "l10-visual-1-o1",
                       "text": "Бить баклуши"
                     },
                     {
-                      "id": "l10-photo-1-o1",
-                      "text": "Быть на седьмом небе"
-                    },
-                    {
-                      "id": "l10-photo-1-o2",
+                      "id": "l10-visual-1-o2",
                       "text": "Брать себя в руки"
                     },
                     {
-                      "id": "l10-photo-1-o3",
+                      "id": "l10-visual-1-o3",
                       "text": "Ахиллесова пята"
                     }
                   ],
                   "correct": [
-                    "l10-photo-1-o2"
+                    "l10-visual-1-o2"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l10-photo-2",
+                  "id": "l10-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l10-2.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-a/ahilesova-pjata",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l10-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-092"
                   },
                   "options": [
                     {
-                      "id": "l10-photo-2-o0",
-                      "text": "Быть на седьмом небе"
+                      "id": "l10-visual-2-o0",
+                      "text": "Бить баклуши"
                     },
                     {
-                      "id": "l10-photo-2-o1",
+                      "id": "l10-visual-2-o1",
                       "text": "Ахиллесова пята"
                     },
                     {
-                      "id": "l10-photo-2-o2",
+                      "id": "l10-visual-2-o2",
                       "text": "Брать себя в руки"
                     },
                     {
-                      "id": "l10-photo-2-o3",
+                      "id": "l10-visual-2-o3",
+                      "text": "Делать из мухи слона"
+                    }
+                  ],
+                  "correct": [
+                    "l10-visual-2-o1"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l10-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l10-3.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-093"
+                  },
+                  "options": [
+                    {
+                      "id": "l10-visual-3-o0",
+                      "text": "Делать из мухи слона"
+                    },
+                    {
+                      "id": "l10-visual-3-o1",
+                      "text": "Брать себя в руки"
+                    },
+                    {
+                      "id": "l10-visual-3-o2",
+                      "text": "Ахиллесова пята"
+                    },
+                    {
+                      "id": "l10-visual-3-o3",
                       "text": "Бить баклуши"
                     }
                   ],
                   "correct": [
-                    "l10-photo-2-o1"
+                    "l10-visual-3-o0"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l10-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l10-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-134"
+                  },
+                  "options": [
+                    {
+                      "id": "l10-visual-4-o0",
+                      "text": "Брать себя в руки"
+                    },
+                    {
+                      "id": "l10-visual-4-o1",
+                      "text": "Ахиллесова пята"
+                    },
+                    {
+                      "id": "l10-visual-4-o2",
+                      "text": "Делать из мухи слона"
+                    },
+                    {
+                      "id": "l10-visual-4-o3",
+                      "text": "Бить баклуши"
+                    }
+                  ],
+                  "correct": [
+                    "l10-visual-4-o3"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l10-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l10-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-104"
+                  },
+                  "options": [
+                    {
+                      "id": "l10-visual-5-o0",
+                      "text": "Ахиллесова пята"
+                    },
+                    {
+                      "id": "l10-visual-5-o1",
+                      "text": "Делать из мухи слона"
+                    },
+                    {
+                      "id": "l10-visual-5-o2",
+                      "text": "Быть на седьмом небе"
+                    },
+                    {
+                      "id": "l10-visual-5-o3",
+                      "text": "Брать себя в руки"
+                    }
+                  ],
+                  "correct": [
+                    "l10-visual-5-o2"
                   ],
                   "points": 1
                 }
@@ -4620,7 +5169,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 5,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l11-q01",
@@ -4721,66 +5270,162 @@
                   ]
                 },
                 {
-                  "id": "l11-photo-1",
+                  "id": "l11-visual-1",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l11-1.jpg",
-                    "source": "https://fraze.ru/index.php/frazeologizm/na-bukvu-v/volk-v-oveciey-shkure",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l11-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-084"
                   },
                   "options": [
                     {
-                      "id": "l11-photo-1-o0",
+                      "id": "l11-visual-1-o0",
+                      "text": "Душа нараспашку"
+                    },
+                    {
+                      "id": "l11-visual-1-o1",
+                      "text": "Золотые руки"
+                    },
+                    {
+                      "id": "l11-visual-1-o2",
                       "text": "Светлая голова"
                     },
                     {
-                      "id": "l11-photo-1-o1",
-                      "text": "Волк в овечьей шкуре"
-                    },
-                    {
-                      "id": "l11-photo-1-o2",
-                      "text": "Спустя рукава"
-                    },
-                    {
-                      "id": "l11-photo-1-o3",
-                      "text": "Золотые руки"
+                      "id": "l11-visual-1-o3",
+                      "text": "Заварить кашу"
                     }
                   ],
                   "correct": [
-                    "l11-photo-1-o1"
+                    "l11-visual-1-o1"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l11-photo-2",
+                  "id": "l11-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l11-2.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-z/zolotye-ruki",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l11-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-124"
                   },
                   "options": [
                     {
-                      "id": "l11-photo-2-o0",
+                      "id": "l11-visual-2-o0",
+                      "text": "Светлая голова"
+                    },
+                    {
+                      "id": "l11-visual-2-o1",
                       "text": "Золотые руки"
                     },
                     {
-                      "id": "l11-photo-2-o1",
-                      "text": "Волк в овечьей шкуре"
+                      "id": "l11-visual-2-o2",
+                      "text": "Заварить кашу"
                     },
                     {
-                      "id": "l11-photo-2-o2",
-                      "text": "Спустя рукава"
-                    },
-                    {
-                      "id": "l11-photo-2-o3",
-                      "text": "Светлая голова"
+                      "id": "l11-visual-2-o3",
+                      "text": "Душа нараспашку"
                     }
                   ],
                   "correct": [
-                    "l11-photo-2-o0"
+                    "l11-visual-2-o0"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l11-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l11-3.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-131"
+                  },
+                  "options": [
+                    {
+                      "id": "l11-visual-3-o0",
+                      "text": "Золотые руки"
+                    },
+                    {
+                      "id": "l11-visual-3-o1",
+                      "text": "Светлая голова"
+                    },
+                    {
+                      "id": "l11-visual-3-o2",
+                      "text": "Душа нараспашку"
+                    },
+                    {
+                      "id": "l11-visual-3-o3",
+                      "text": "Заварить кашу"
+                    }
+                  ],
+                  "correct": [
+                    "l11-visual-3-o3"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l11-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l11-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-113"
+                  },
+                  "options": [
+                    {
+                      "id": "l11-visual-4-o0",
+                      "text": "Светлая голова"
+                    },
+                    {
+                      "id": "l11-visual-4-o1",
+                      "text": "Заварить кашу"
+                    },
+                    {
+                      "id": "l11-visual-4-o2",
+                      "text": "Душа нараспашку"
+                    },
+                    {
+                      "id": "l11-visual-4-o3",
+                      "text": "Золотые руки"
+                    }
+                  ],
+                  "correct": [
+                    "l11-visual-4-o2"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l11-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l11-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-146"
+                  },
+                  "options": [
+                    {
+                      "id": "l11-visual-5-o0",
+                      "text": "Золотые руки"
+                    },
+                    {
+                      "id": "l11-visual-5-o1",
+                      "text": "Тайға таңба басқандай"
+                    },
+                    {
+                      "id": "l11-visual-5-o2",
+                      "text": "Ат үстінен қарау"
+                    },
+                    {
+                      "id": "l11-visual-5-o3",
+                      "text": "Қой аузынан шөп алмас"
+                    }
+                  ],
+                  "correct": [
+                    "l11-visual-5-o1"
                   ],
                   "points": 1
                 }
@@ -4968,7 +5613,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 7,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l12-q01",
@@ -5069,125 +5714,162 @@
                   ]
                 },
                 {
-                  "id": "l12-q05",
-                  "source_task_no": 5,
-                  "prompt_md": "Алломорфизм означает:",
-                  "points": 1,
+                  "id": "l12-visual-1",
                   "type": "single_choice",
-                  "options": [
-                    {
-                      "id": "l12-q05-o1",
-                      "label": "А",
-                      "text": "общность"
-                    },
-                    {
-                      "id": "l12-q05-o2",
-                      "label": "Б",
-                      "text": "специфическое различие языковых систем"
-                    },
-                    {
-                      "id": "l12-q05-o3",
-                      "label": "В",
-                      "text": "синонимию"
-                    },
-                    {
-                      "id": "l12-q05-o4",
-                      "label": "Г",
-                      "text": "вариантность"
-                    }
-                  ],
-                  "correct": [
-                    "l12-q05-o2"
-                  ]
-                },
-                {
-                  "id": "l12-q06",
-                  "source_task_no": 6,
-                  "prompt_md": "Русский язык — флективный, казахский — агглютинативный. Это может быть основанием для изучения:",
-                  "points": 1,
-                  "type": "single_choice",
-                  "options": [
-                    {
-                      "id": "l12-q06-o1",
-                      "label": "А",
-                      "text": "структурного алломорфизма"
-                    },
-                    {
-                      "id": "l12-q06-o2",
-                      "label": "Б",
-                      "text": "орфографической синонимии"
-                    },
-                    {
-                      "id": "l12-q06-o3",
-                      "label": "В",
-                      "text": "фонетической омонимии"
-                    }
-                  ],
-                  "correct": [
-                    "l12-q06-o1"
-                  ]
-                },
-                {
-                  "id": "l12-photo-1",
-                  "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l12-1.jpg",
-                    "source": "https://fr.hairfinder.com/cheveux-questions-2/faire-dresser-cheveux.htm",
-                    "credit": "Иллюстрация: Hairfinder"
+                    "src": "/quiz-images/rev-l12-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-106"
                   },
                   "options": [
                     {
-                      "id": "l12-photo-1-o0",
-                      "text": "Волосы встали дыбом"
-                    },
-                    {
-                      "id": "l12-photo-1-o1",
-                      "text": "За тридевять земель"
-                    },
-                    {
-                      "id": "l12-photo-1-o2",
+                      "id": "l12-visual-1-o0",
                       "text": "Мухи не обидит"
                     },
                     {
-                      "id": "l12-photo-1-o3",
-                      "text": "Қой аузынан шөп алмас"
+                      "id": "l12-visual-1-o1",
+                      "text": "Волосы встали дыбом"
+                    },
+                    {
+                      "id": "l12-visual-1-o2",
+                      "text": "За тридевять земель"
+                    },
+                    {
+                      "id": "l12-visual-1-o3",
+                      "text": "Ит арқасы қиянда"
                     }
                   ],
                   "correct": [
-                    "l12-photo-1-o0"
+                    "l12-visual-1-o0"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l12-photo-2",
+                  "id": "l12-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l12-2.jpg",
-                    "source": "https://fraze.ru/index.php/frazeologizm/na-bukvu-z/za-trideviati-zemeli",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l12-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-127"
                   },
                   "options": [
                     {
-                      "id": "l12-photo-2-o0",
-                      "text": "Волосы встали дыбом"
-                    },
-                    {
-                      "id": "l12-photo-2-o1",
+                      "id": "l12-visual-2-o0",
                       "text": "Мухи не обидит"
                     },
                     {
-                      "id": "l12-photo-2-o2",
-                      "text": "Қой аузынан шөп алмас"
+                      "id": "l12-visual-2-o1",
+                      "text": "За тридевять земель"
                     },
                     {
-                      "id": "l12-photo-2-o3",
-                      "text": "За тридевять земель"
+                      "id": "l12-visual-2-o2",
+                      "text": "Ит арқасы қиянда"
+                    },
+                    {
+                      "id": "l12-visual-2-o3",
+                      "text": "Волосы встали дыбом"
                     }
                   ],
                   "correct": [
-                    "l12-photo-2-o3"
+                    "l12-visual-2-o3"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l12-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l12-3.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-129"
+                  },
+                  "options": [
+                    {
+                      "id": "l12-visual-3-o0",
+                      "text": "Төбе шашы тік тұру"
+                    },
+                    {
+                      "id": "l12-visual-3-o1",
+                      "text": "Мухи не обидит"
+                    },
+                    {
+                      "id": "l12-visual-3-o2",
+                      "text": "Ит арқасы қиянда"
+                    },
+                    {
+                      "id": "l12-visual-3-o3",
+                      "text": "Қой аузынан шөп алмас"
+                    }
+                  ],
+                  "correct": [
+                    "l12-visual-3-o2"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l12-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l12-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-144"
+                  },
+                  "options": [
+                    {
+                      "id": "l12-visual-4-o0",
+                      "text": "Волосы встали дыбом"
+                    },
+                    {
+                      "id": "l12-visual-4-o1",
+                      "text": "Қой аузынан шөп алмас"
+                    },
+                    {
+                      "id": "l12-visual-4-o2",
+                      "text": "Ит арқасы қиянда"
+                    },
+                    {
+                      "id": "l12-visual-4-o3",
+                      "text": "Төбе шашы тік тұру"
+                    }
+                  ],
+                  "correct": [
+                    "l12-visual-4-o1"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l12-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l12-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-130"
+                  },
+                  "options": [
+                    {
+                      "id": "l12-visual-5-o0",
+                      "text": "За тридевять земель"
+                    },
+                    {
+                      "id": "l12-visual-5-o1",
+                      "text": "Мухи не обидит"
+                    },
+                    {
+                      "id": "l12-visual-5-o2",
+                      "text": "Волосы встали дыбом"
+                    },
+                    {
+                      "id": "l12-visual-5-o3",
+                      "text": "Қой аузынан шөп алмас"
+                    }
+                  ],
+                  "correct": [
+                    "l12-visual-5-o0"
                   ],
                   "points": 1
                 }
@@ -5347,7 +6029,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 7,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l13-q01",
@@ -5449,132 +6131,162 @@
                   ]
                 },
                 {
-                  "id": "l13-q06",
-                  "source_task_no": 6,
-                  "prompt_md": "Что такое безэквивалентная фразеология?",
-                  "points": 1,
+                  "id": "l13-visual-1",
                   "type": "single_choice",
-                  "options": [
-                    {
-                      "id": "l13-q06-o1",
-                      "label": "А",
-                      "text": "ФЕ, имеющая несколько синонимов"
-                    },
-                    {
-                      "id": "l13-q06-o2",
-                      "label": "Б",
-                      "text": "ФЕ, не имеющая фразеологического эквивалента или аналога в другом языке"
-                    },
-                    {
-                      "id": "l13-q06-o3",
-                      "label": "В",
-                      "text": "свободное сочетание"
-                    },
-                    {
-                      "id": "l13-q06-o4",
-                      "label": "Г",
-                      "text": "вариант ФЕ"
-                    }
-                  ],
-                  "correct": [
-                    "l13-q06-o2"
-                  ]
-                },
-                {
-                  "id": "l13-q08",
-                  "source_task_no": 8,
-                  "prompt_md": "Выберите способы передачи безэквивалентной фразеологии:",
-                  "points": 1,
-                  "type": "multiple_choice",
-                  "options": [
-                    {
-                      "id": "l13-q08-o1",
-                      "label": "А",
-                      "text": "описательный перевод"
-                    },
-                    {
-                      "id": "l13-q08-o2",
-                      "label": "Б",
-                      "text": "комментарий"
-                    },
-                    {
-                      "id": "l13-q08-o3",
-                      "label": "В",
-                      "text": "сохранение оригинала с объяснением"
-                    },
-                    {
-                      "id": "l13-q08-o4",
-                      "label": "Г",
-                      "text": "обязательный буквальный перевод"
-                    }
-                  ],
-                  "correct": [
-                    "l13-q08-o1",
-                    "l13-q08-o2",
-                    "l13-q08-o3"
-                  ]
-                },
-                {
-                  "id": "l13-photo-1",
-                  "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l13-1.jpg",
-                    "source": "https://fraze.ru/index.php/frazeologizm/na-bukvu-m/mukhi-ne-obidit",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l13-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-103"
                   },
                   "options": [
                     {
-                      "id": "l13-photo-1-o0",
-                      "text": "Беречь как зеницу ока"
-                    },
-                    {
-                      "id": "l13-photo-1-o1",
+                      "id": "l13-visual-1-o0",
                       "text": "Быть на седьмом небе"
                     },
                     {
-                      "id": "l13-photo-1-o2",
-                      "text": "Қой аузынан шөп алмас"
+                      "id": "l13-visual-1-o1",
+                      "text": "Когда рак на горе свистнет"
                     },
                     {
-                      "id": "l13-photo-1-o3",
+                      "id": "l13-visual-1-o2",
                       "text": "Мухи не обидит"
+                    },
+                    {
+                      "id": "l13-visual-1-o3",
+                      "text": "Беречь как зеницу ока"
                     }
                   ],
                   "correct": [
-                    "l13-photo-1-o3"
+                    "l13-visual-1-o3"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l13-photo-2",
+                  "id": "l13-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l13-2.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-b/berechi-kak-zenicu-oka",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l13-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-104"
                   },
                   "options": [
                     {
-                      "id": "l13-photo-2-o0",
+                      "id": "l13-visual-2-o0",
+                      "text": "Когда рак на горе свистнет"
+                    },
+                    {
+                      "id": "l13-visual-2-o1",
+                      "text": "Мухи не обидит"
+                    },
+                    {
+                      "id": "l13-visual-2-o2",
                       "text": "Быть на седьмом небе"
                     },
                     {
-                      "id": "l13-photo-2-o1",
-                      "text": "Қой аузынан шөп алмас"
-                    },
-                    {
-                      "id": "l13-photo-2-o2",
+                      "id": "l13-visual-2-o3",
                       "text": "Беречь как зеницу ока"
-                    },
-                    {
-                      "id": "l13-photo-2-o3",
-                      "text": "Мухи не обидит"
                     }
                   ],
                   "correct": [
-                    "l13-photo-2-o2"
+                    "l13-visual-2-o2"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l13-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l13-3.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-146"
+                  },
+                  "options": [
+                    {
+                      "id": "l13-visual-3-o0",
+                      "text": "Төбесі көкке жету"
+                    },
+                    {
+                      "id": "l13-visual-3-o1",
+                      "text": "Тайға таңба басқандай"
+                    },
+                    {
+                      "id": "l13-visual-3-o2",
+                      "text": "Түйенің құйрығы жерге тигенде"
+                    },
+                    {
+                      "id": "l13-visual-3-o3",
+                      "text": "Ақтабан шұбырынды"
+                    }
+                  ],
+                  "correct": [
+                    "l13-visual-3-o1"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l13-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l13-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-101"
+                  },
+                  "options": [
+                    {
+                      "id": "l13-visual-4-o0",
+                      "text": "Түйенің құйрығы жерге тигенде"
+                    },
+                    {
+                      "id": "l13-visual-4-o1",
+                      "text": "Тайға таңба басқандай"
+                    },
+                    {
+                      "id": "l13-visual-4-o2",
+                      "text": "Ақтабан шұбырынды"
+                    },
+                    {
+                      "id": "l13-visual-4-o3",
+                      "text": "Төбесі көкке жету"
+                    }
+                  ],
+                  "correct": [
+                    "l13-visual-4-o0"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l13-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l13-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-108"
+                  },
+                  "options": [
+                    {
+                      "id": "l13-visual-5-o0",
+                      "text": "Тайға таңба басқандай"
+                    },
+                    {
+                      "id": "l13-visual-5-o1",
+                      "text": "Түйенің құйрығы жерге тигенде"
+                    },
+                    {
+                      "id": "l13-visual-5-o2",
+                      "text": "Төбесі көкке жету"
+                    },
+                    {
+                      "id": "l13-visual-5-o3",
+                      "text": "Ақтабан шұбырынды"
+                    }
+                  ],
+                  "correct": [
+                    "l13-visual-5-o3"
                   ],
                   "points": 1
                 }
@@ -5749,7 +6461,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 7,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l14-q01",
@@ -5781,47 +6493,6 @@
                   ],
                   "correct": [
                     "l14-q01-o2"
-                  ]
-                },
-                {
-                  "id": "l14-q02",
-                  "source_task_no": 2,
-                  "prompt_md": "Выберите ученых, связанных в лекции с когнитивной лингвистикой:",
-                  "points": 1,
-                  "type": "multiple_choice",
-                  "options": [
-                    {
-                      "id": "l14-q02-o1",
-                      "label": "А",
-                      "text": "Дж. Лакофф"
-                    },
-                    {
-                      "id": "l14-q02-o2",
-                      "label": "Б",
-                      "text": "М. Джонсон"
-                    },
-                    {
-                      "id": "l14-q02-o3",
-                      "label": "В",
-                      "text": "Е. С. Кубрякова"
-                    },
-                    {
-                      "id": "l14-q02-o4",
-                      "label": "Г",
-                      "text": "З. Д. Попова"
-                    },
-                    {
-                      "id": "l14-q02-o5",
-                      "label": "Д",
-                      "text": "И. А. Стернин"
-                    }
-                  ],
-                  "correct": [
-                    "l14-q02-o1",
-                    "l14-q02-o2",
-                    "l14-q02-o3",
-                    "l14-q02-o4",
-                    "l14-q02-o5"
                   ]
                 },
                 {
@@ -5889,95 +6560,162 @@
                   ]
                 },
                 {
-                  "id": "l14-q06",
-                  "source_task_no": 6,
-                  "prompt_md": "Выберите концепты, которые могут быть представлены во фразеологии:",
-                  "points": 1,
-                  "type": "multiple_choice",
-                  "options": [
-                    {
-                      "id": "l14-q06-o1",
-                      "label": "А",
-                      "text": "человек"
-                    },
-                    {
-                      "id": "l14-q06-o2",
-                      "label": "Б",
-                      "text": "труд"
-                    },
-                    {
-                      "id": "l14-q06-o3",
-                      "label": "В",
-                      "text": "время"
-                    },
-                    {
-                      "id": "l14-q06-o4",
-                      "label": "Г",
-                      "text": "эмоции"
-                    }
-                  ],
-                  "correct": [
-                    "l14-q06-o1",
-                    "l14-q06-o2",
-                    "l14-q06-o3",
-                    "l14-q06-o4"
-                  ]
-                },
-                {
-                  "id": "l14-photo-1",
+                  "id": "l14-visual-1",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l14-1.jpg",
-                    "source": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-d/dusha-v-pyatki-ushla",
-                    "credit": "Источник изображения"
+                    "src": "/quiz-images/rev-l14-1.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-110"
                   },
                   "options": [
                     {
-                      "id": "l14-photo-1-o0",
+                      "id": "l14-visual-1-o0",
                       "text": "Душа нараспашку"
                     },
                     {
-                      "id": "l14-photo-1-o1",
-                      "text": "Душа в пятки ушла"
+                      "id": "l14-visual-1-o1",
+                      "text": "Удар судьбы"
                     },
                     {
-                      "id": "l14-photo-1-o2",
-                      "text": "Каменное сердце"
+                      "id": "l14-visual-1-o2",
+                      "text": "Душа болит"
+                    },
+                    {
+                      "id": "l14-visual-1-o3",
+                      "text": "Душа в пятки ушла"
                     }
                   ],
                   "correct": [
-                    "l14-photo-1-o1"
+                    "l14-visual-1-o2"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l14-photo-2",
+                  "id": "l14-visual-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
+                  "prompt_md": "Какой фразеологизм изображён?",
                   "image": {
-                    "src": "/quiz-images/l14-2.jpg",
-                    "source": "https://commons.wikimedia.org/wiki/File:Heart-shaped_stone.JPG",
-                    "credit": "Фото: Sylda31",
-                    "license": "CC BY-SA 3.0",
-                    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+                    "src": "/quiz-images/rev-l14-2.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-111"
                   },
                   "options": [
                     {
-                      "id": "l14-photo-2-o0",
-                      "text": "Каменное сердце"
+                      "id": "l14-visual-2-o0",
+                      "text": "Удар судьбы"
                     },
                     {
-                      "id": "l14-photo-2-o1",
+                      "id": "l14-visual-2-o1",
                       "text": "Душа в пятки ушла"
                     },
                     {
-                      "id": "l14-photo-2-o2",
+                      "id": "l14-visual-2-o2",
+                      "text": "Душа болит"
+                    },
+                    {
+                      "id": "l14-visual-2-o3",
                       "text": "Душа нараспашку"
                     }
                   ],
                   "correct": [
-                    "l14-photo-2-o0"
+                    "l14-visual-2-o1"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l14-visual-3",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l14-3.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-113"
+                  },
+                  "options": [
+                    {
+                      "id": "l14-visual-3-o0",
+                      "text": "Душа нараспашку"
+                    },
+                    {
+                      "id": "l14-visual-3-o1",
+                      "text": "Душа болит"
+                    },
+                    {
+                      "id": "l14-visual-3-o2",
+                      "text": "Душа в пятки ушла"
+                    },
+                    {
+                      "id": "l14-visual-3-o3",
+                      "text": "Удар судьбы"
+                    }
+                  ],
+                  "correct": [
+                    "l14-visual-3-o0"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l14-visual-4",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l14-4.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-116"
+                  },
+                  "options": [
+                    {
+                      "id": "l14-visual-4-o0",
+                      "text": "Жүрек жұтқан"
+                    },
+                    {
+                      "id": "l14-visual-4-o1",
+                      "text": "Маңдайға жазу"
+                    },
+                    {
+                      "id": "l14-visual-4-o2",
+                      "text": "Тағдырдың жазуы"
+                    },
+                    {
+                      "id": "l14-visual-4-o3",
+                      "text": "Тас жүрек"
+                    }
+                  ],
+                  "correct": [
+                    "l14-visual-4-o3"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l14-visual-5",
+                  "type": "single_choice",
+                  "prompt_md": "Какой фразеологизм изображён?",
+                  "image": {
+                    "src": "/quiz-images/rev-l14-5.jpg",
+                    "credit": "Иллюстрация, предоставленная автором курса",
+                    "asset_id": "illustration-118"
+                  },
+                  "options": [
+                    {
+                      "id": "l14-visual-5-o0",
+                      "text": "Душа в пятки ушла"
+                    },
+                    {
+                      "id": "l14-visual-5-o1",
+                      "text": "Душа нараспашку"
+                    },
+                    {
+                      "id": "l14-visual-5-o2",
+                      "text": "Удар судьбы"
+                    },
+                    {
+                      "id": "l14-visual-5-o3",
+                      "text": "Душа болит"
+                    }
+                  ],
+                  "correct": [
+                    "l14-visual-5-o2"
                   ],
                   "points": 1
                 }
@@ -6151,7 +6889,7 @@
               "type": "quiz",
               "title": "Проверьте себя",
               "pass_percent": 70,
-              "max_points": 7,
+              "max_points": 8,
               "questions": [
                 {
                   "id": "l15-q01",
@@ -6319,52 +7057,83 @@
                   ]
                 },
                 {
-                  "id": "l15-photo-1",
+                  "id": "l15-theory-new-1",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
-                  "image": {
-                    "src": "/quiz-images/l15-1.webp",
-                    "source": "https://frazeologia.ru/frazeologizm/b/biti-baklushi",
-                    "credit": "Источник изображения"
-                  },
+                  "prompt_md": "Как цифровой корпус помогает исследовать фразеологизмы?",
                   "options": [
                     {
-                      "id": "l15-photo-1-o0",
-                      "text": "Дать зелёный свет"
+                      "id": "l15-theory-new-1-o0",
+                      "text": "Показывает употребления, частотность и контексты"
                     },
                     {
-                      "id": "l15-photo-1-o1",
-                      "text": "Бить баклуши"
+                      "id": "l15-theory-new-1-o1",
+                      "text": "Автоматически делает любую фразу устойчивой"
+                    },
+                    {
+                      "id": "l15-theory-new-1-o2",
+                      "text": "Заменяет анализ значения подсчётом букв"
+                    },
+                    {
+                      "id": "l15-theory-new-1-o3",
+                      "text": "Подтверждает значение без контекста"
                     }
                   ],
                   "correct": [
-                    "l15-photo-1-o1"
+                    "l15-theory-new-1-o0"
                   ],
                   "points": 1
                 },
                 {
-                  "id": "l15-photo-2",
+                  "id": "l15-theory-new-2",
                   "type": "single_choice",
-                  "prompt_md": "Какой фразеологизм из презентации изображён на картинке?",
-                  "image": {
-                    "src": "/quiz-images/l15-2.jpg",
-                    "source": "https://commons.wikimedia.org/wiki/File:Green_traffic_light_on_Vasilissis_Amalias_Avenue_at_night_on_October_30,_2022.jpg",
-                    "credit": "Фото: George E. Koronaios",
-                    "license": "CC BY-SA 4.0",
-                    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
-                  },
+                  "prompt_md": "Почему не каждое популярное выражение из интернета становится фразеологизмом?",
                   "options": [
                     {
-                      "id": "l15-photo-2-o0",
-                      "text": "Дать зелёный свет"
+                      "id": "l15-theory-new-2-o0",
+                      "text": "Оно должно обязательно рифмоваться"
                     },
                     {
-                      "id": "l15-photo-2-o1",
-                      "text": "Бить баклуши"
+                      "id": "l15-theory-new-2-o1",
+                      "text": "Для устойчивой единицы важны повторяемость, узнаваемость и закреплённое значение"
+                    },
+                    {
+                      "id": "l15-theory-new-2-o2",
+                      "text": "Фразеологизмы встречаются только в печатных книгах"
+                    },
+                    {
+                      "id": "l15-theory-new-2-o3",
+                      "text": "Все интернет-выражения исчезают за один день"
                     }
                   ],
                   "correct": [
-                    "l15-photo-2-o0"
+                    "l15-theory-new-2-o1"
+                  ],
+                  "points": 1
+                },
+                {
+                  "id": "l15-theory-new-3",
+                  "type": "single_choice",
+                  "prompt_md": "Что следует сопоставлять при изучении нового выражения в двух языках?",
+                  "options": [
+                    {
+                      "id": "l15-theory-new-3-o0",
+                      "text": "Только длину записи"
+                    },
+                    {
+                      "id": "l15-theory-new-3-o1",
+                      "text": "Только первые буквы"
+                    },
+                    {
+                      "id": "l15-theory-new-3-o2",
+                      "text": "Значение, контексты, образ и стилистическую окраску"
+                    },
+                    {
+                      "id": "l15-theory-new-3-o3",
+                      "text": "Только число слов"
+                    }
+                  ],
+                  "correct": [
+                    "l15-theory-new-3-o2"
                   ],
                   "points": 1
                 }

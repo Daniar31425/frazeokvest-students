@@ -113,7 +113,7 @@ function optionInput(question, option, index, multiple = false) {
 }
 
 function questionHtml(question, number) {
-  const title = `<legend>${number + 1}. ${markdown(question.prompt_md)}</legend>${question.image ? `<div class="quiz-photo"><span class="eyebrow">Узнайте по изображению</span><img src="${escapeHtml(question.image.src)}" alt="Изображение к вопросу ${number + 1}" loading="lazy">${question.image.source ? `<a href="${escapeHtml(question.image.source)}" target="_blank" rel="noopener noreferrer">${escapeHtml(question.image.credit || 'Источник изображения')}</a>` : ''}${question.image.licenseUrl ? `<a href="${escapeHtml(question.image.licenseUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(question.image.license)}</a>` : ''}</div>` : ''}`;
+  const title = `<legend>${number + 1}. ${markdown(question.prompt_md)}</legend>${question.image ? `<div class="quiz-photo"><span class="eyebrow">Узнайте по изображению</span><img src="${escapeHtml(question.image.src)}" alt="Изображение к вопросу ${number + 1}" loading="lazy"></div>` : ''}`;
   if (question.type === 'single_choice' || question.type === 'multiple_choice') return `<fieldset data-question="${question.id}" data-type="${question.type}">${title}${question.options.map((o, i) => optionInput(question, o, i, question.type === 'multiple_choice')).join('')}</fieldset>`;
   if (question.type === 'matching') return `<fieldset data-question="${question.id}" data-type="matching">${title}${question.left.map(left => `<label class="select-row"><span>${markdown(textOf(left))}</span><select name="${question.id}-${left.id}" required><option value="">Выберите соответствие</option>${question.right.map(right => `<option value="${escapeHtml(right.id)}">${escapeHtml(textOf(right))}</option>`).join('')}</select></label>`).join('')}</fieldset>`;
   if (question.type === 'ordering') return `<fieldset data-question="${question.id}" data-type="ordering">${title}${question.items.map(item => `<label class="select-row"><span>${markdown(textOf(item))}</span><select name="${question.id}-${item.id}" required><option value="">Позиция</option>${question.items.map((_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}</select></label>`).join('')}</fieldset>`;
@@ -149,9 +149,17 @@ function gradeQuiz(form, quiz) {
   return Math.round(earned / Number(quiz.max_points || quiz.questions.length) * 100);
 }
 
+function quizImageCredits() {
+  const quiz = lessons[state.current - 1]?.items.find(item => item.type === 'quiz');
+  const images = quiz?.questions.filter(question => question.image).map(question => question.image) || [];
+  if (!images.length) return '';
+  const credits = [...new Map(images.map(image => [image.credit || 'Иллюстрация курса', image])).values()];
+  return `<details class="references"><summary>Об иллюстрациях</summary>${credits.map(image => `<p>${escapeHtml(image.credit || 'Иллюстрация курса')}${image.source ? ` · <a href="${escapeHtml(image.source)}" target="_blank" rel="noopener noreferrer">Источник</a>` : ''}${image.licenseUrl ? ` · <a href="${escapeHtml(image.licenseUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(image.license || 'Лицензия')}</a>` : ''}</p>`).join('')}</details>`;
+}
+
 function resultView(score, passed) {
   const next = state.current < 15 ? `<button class="btn btn-primary next-lesson" data-lesson="${state.current + 1}">Следующий урок <span>→</span></button>` : '<button class="btn btn-primary next-lesson" data-go="final">Перейти к итоговому тесту <span>→</span></button>';
-  app.innerHTML = shell(`<section class="result ${passed ? 'success' : 'fail'}"><div class="result-icon">${passed ? '✓' : '!'}</div><span class="eyebrow">Результат теста</span><h1>${score}%</h1><p>${passed ? 'Урок завершён. Следующая тема открыта.' : 'Повторите материал и попробуйте снова.'}</p><div class="actions">${passed ? next : '<button class="btn btn-primary" data-go="course">К учебному плану</button>'}<button class="btn btn-outline" data-lesson="${state.current}">Повторить материал</button></div></section>`, 'course');
+  app.innerHTML = shell(`<section class="result ${passed ? 'success' : 'fail'}"><div class="result-icon">${passed ? '✓' : '!'}</div><span class="eyebrow">Результат теста</span><h1>${score}%</h1><p>${passed ? 'Урок завершён. Следующая тема открыта.' : 'Повторите материал и попробуйте снова.'}</p><div class="actions">${passed ? next : '<button class="btn btn-primary" data-go="course">К учебному плану</button>'}<button class="btn btn-outline" data-lesson="${state.current}">Повторить материал</button></div></section>${quizImageCredits()}`, 'course');
 }
 
 function finalView() {
