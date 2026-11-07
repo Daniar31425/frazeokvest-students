@@ -1,14 +1,14 @@
 // Absolute word timestamps from the supplied tema 3 zvuk.mp3.
 // Standard spelling of terms and Kazakh examples follows the approved script.
-window.LECTURE_TIMELINE={duration:359.1575625,scenes:[
- {at:0,title:'Фразеологизм или свободное сочетание?',points:[
+window.LECTURE_TIMELINE={duration:359.1565625,scenes:[
+ {at:0.0,title:'Фразеологизм или свободное сочетание?',points:[
    {at:5.72,text:'Ранее — фразеологическая единица и её признаки'},
    {at:16.46,text:'Учимся различать устойчивые и свободные сочетания'},
    {at:23.52,text:'Одинаковая внешняя форма'},
    {at:26.06,text:'Разный смысл'},
    {at:48.02,text:'Анализируем значение',detailAt:50.18,detail:'и контекст употребления'}
  ],visuals:[
-   {at:0,until:29.14,art:'portrait',title:'Абзалова Галия Аликовна',description:'Лектор курса'},
+   {at:0.0,until:29.14,art:'portrait',title:'Абзалова Галия Аликовна',description:'Лектор курса'},
    {at:29.14,until:31.64,art:'text',title:'Протянуть руку вперёд'},
    {at:31.64,until:33.74,art:'text',title:'Протянуть руку помощи'},
    {at:33.74,until:37.4,art:'text',title:'Протянуть руку вперёд',translationAt:35.94,translation:'Физическое движение'},
@@ -64,31 +64,31 @@ window.LECTURE_TIMELINE={duration:359.1575625,scenes:[
    {at:226.12,until:240.8,art:'text',title:'Функция в предложении',descriptionAt:232.44,description:'Отдельные члены или неделимое целое'},
    {at:240.8,art:'text',title:'Он работал не покладая рук',descriptionAt:246.74,description:'Как? — Не покладая рук',translationAt:248.82,translation:'Обстоятельство',additions:[{at:251.48,text:'Усердно, без отдыха'}]}
  ]},
- {at:253.48,title:'Одна форма — два значения',points:[
-   {at:259.1,text:'Буквальное',detailAt:259.96,detail:'и переносное употребление'},
-   {at:262.78,text:'Межкатегориальная омонимия'},
-   {at:283.58,text:'Та же форма может быть фразеологизмом'},
-   {at:286.92,text:'Подобные случаи есть и в казахском языке'},
-   {at:303.08,text:'Решение зависит от контекста'}
+ {at:253.22,title:'Одна форма — два значения',points:[
+   {at:258.82,text:'Буквальное',detailAt:259.76,detail:'и переносное употребление'},
+   {at:262.46,text:'Межкатегориальная омонимия'},
+   {at:283.579,text:'Та же форма может быть фразеологизмом'},
+   {at:286.919,text:'Подобные случаи есть и в казахском языке'},
+   {at:303.079,text:'Решение зависит от контекста'}
  ],visuals:[
-   {at:253.48,until:266.62,art:'text',title:'Совпадение внешней формы'},
-   {at:266.62,until:275.02,art:'text',title:'Намылить шею',translationAt:269.92,translation:'Действие во время мытья',descriptionAt:272.44,description:'Свободное сочетание'},
-   {at:275.02,until:289.16,art:'text',title:'Ему намылили шею за опоздание',translationAt:278.98,translation:'Строго отругали',descriptionAt:283.58,description:'Фразеологическое употребление'},
-   {at:289.16,until:292.94,art:'text',title:'Қол жуу',translationAt:292.2,translation:'Мыть руки'},
-   {at:292.94,art:'text',title:'Қол жуу — переносное значение',translationAt:297.7,translation:'Утрата чего-либо',descriptionAt:299.24,description:'Или отстранение — в переносном контексте'}
+   {at:253.22,until:266.619,art:'text',title:'Совпадение внешней формы'},
+   {at:266.619,until:275.019,art:'text',title:'Намылить шею',translationAt:269.919,translation:'Действие во время мытья',descriptionAt:272.439,description:'Свободное сочетание'},
+   {at:275.019,until:289.159,art:'text',title:'Ему намылили шею за опоздание',translationAt:278.979,translation:'Строго отругали',descriptionAt:283.579,description:'Фразеологическое употребление'},
+   {at:289.159,until:292.939,art:'text',title:'Қол жуу',translationAt:292.199,translation:'Мыть руки'},
+   {at:292.939,art:'text',title:'Қол жуу — переносное значение',translationAt:297.699,translation:'Утрата чего-либо',descriptionAt:299.239,description:'Или отстранение — в переносном контексте'}
  ]},
- {at:304.06,title:'Как проверить сочетание?',points:[
-   {at:309.22,text:'Каково значение в данном предложении?'},
-   {at:312.72,text:'Сохраняются ли прямые значения слов?'},
-   {at:316.68,text:'Можно ли свободно заменить компонент?'},
-   {at:319.72,text:'Какова синтаксическая функция?'},
-   {at:324.12,text:'Воспроизводится ли готовое выражение?'}
+ {at:304.059,title:'Как проверить сочетание?',points:[
+   {at:309.219,text:'Каково значение в данном предложении?'},
+   {at:312.719,text:'Сохраняются ли прямые значения слов?'},
+   {at:316.679,text:'Можно ли свободно заменить компонент?'},
+   {at:319.719,text:'Какова синтаксическая функция?'},
+   {at:324.119,text:'Воспроизводится ли готовое выражение?'}
  ],visuals:[
-   {at:304.06,until:328.38,art:'text',title:'Пять вопросов для анализа'},
-   {at:328.38,until:336.88,art:'text',title:'Одного критерия недостаточно',descriptionAt:335.34,description:'Учитывайте совокупность признаков'},
-   {at:336.88,until:339.64,art:'text',title:'Самостоятельное сравнение'},
-   {at:339.64,until:341.72,art:'text',title:'Протянуть руку вперёд'},
-   {at:341.72,until:351.58,art:'text',title:'Протянуть руку вперёд ↔ протянуть руку помощи',descriptionAt:346.28,description:'Прямое и переносное употребление',additions:[{at:350.78,text:'Объясните роль контекста'}]},
-   {at:351.58,art:'text',title:'В следующей лекции',descriptionAt:353.96,description:'Классификация фразеологических единиц'}
+   {at:304.059,until:328.379,art:'text',title:'Пять вопросов для анализа'},
+   {at:328.379,until:336.879,art:'text',title:'Одного критерия недостаточно',descriptionAt:335.339,description:'Учитывайте совокупность признаков'},
+   {at:336.879,until:339.639,art:'text',title:'Самостоятельное сравнение'},
+   {at:339.639,until:341.719,art:'text',title:'Протянуть руку вперёд'},
+   {at:341.719,until:351.579,art:'text',title:'Протянуть руку вперёд ↔ протянуть руку помощи',descriptionAt:346.279,description:'Прямое и переносное употребление',additions:[{at:350.779,text:'Объясните роль контекста'}]},
+   {at:351.579,art:'text',title:'В следующей лекции',descriptionAt:353.959,description:'Классификация фразеологических единиц'}
  ]}
 ]};
