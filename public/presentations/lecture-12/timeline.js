@@ -45,7 +45,7 @@ window.LECTURE_TIMELINE={duration:377.887375,scenes:[
   {at:155.44,until:174.96,art:'semantic',title:'Пример: выражения о страхе',additions:[{at:163.68,text:'Волосы'},{at:164.78,text:'Сердце'},{at:165.66,text:'Движение'},{at:166.58,text:'Изменение состояния человека'}]},
   {at:174.96,until:184.02,art:'semantic',title:'Компонентный анализ',descriptionAt:181.3,description:'Выделяем отдельные смысловые признаки'},
   {at:184.02,until:192.94,art:'text',title:'За тридевять земель',translationAt:187.4,translation:'Очень далеко',descriptionAt:189.78,description:'Образность и связь со сказочной речью'},
-  {at:192.94,until:207.72,art:'semantic',title:'Ит арқасы қиянда',descriptionAt:196.86,description:'Проверяем общий смысл расстояния',additions:[{at:200.36,text:'Отдельно анализируем образ и употребление'},{at:202.36,text:'Не переносим характеристики автоматически'}]},
+  {at:192.94,until:207.72,art:'semantic',title:'Ит арқасы қиянда',translationAt:192.94,translation:'За тридевять земель',descriptionAt:196.86,description:'Проверяем общий смысл расстояния',additions:[{at:200.36,text:'Отдельно анализируем образ и употребление'},{at:202.36,text:'Не переносим характеристики автоматически'}]},
   {at:207.72,art:'semantic',title:'Анализ значения ≠ буквальный перевод',descriptionAt:209.6,description:'Разбираем смысловые признаки выражения'}
  ]},
  {at:214.4,title:'Модели и тематические поля',points:[
