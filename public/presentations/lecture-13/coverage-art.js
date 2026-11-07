@@ -18,7 +18,7 @@ const images = {
     "phrase": "Беречь как зеницу ока"
   },
   "Көздің қарашығындай сақтау": {
-    "src": "/presentation-assets/illustration-095.jpg",
+    "src": "/presentation-assets/protect-loved-one.jpg",
     "alt": "Иллюстрация выражения «Көздің қарашығындай сақтау»",
     "phrases": [
       "Көздің қарашығындай сақтау"
@@ -52,7 +52,7 @@ const images = {
     "phrase": "Қой аузынан шөп алмас"
   },
   "Когда рак на горе свистнет": {
-    "src": "/presentation-assets/illustration-105.jpg",
+    "src": "/presentation-assets/crayfish-whistling.jpg",
     "alt": "Иллюстрация выражения «Когда рак на горе свистнет»",
     "phrases": [
       "Когда рак на горе свистнет"
@@ -103,7 +103,7 @@ const photos = [
     "phrase": "Беречь как зеницу ока"
   },
   {
-    "src": "/presentation-assets/illustration-095.jpg",
+    "src": "/presentation-assets/protect-loved-one.jpg",
     "alt": "Иллюстрация выражения «Көздің қарашығындай сақтау»",
     "phrases": [
       "Көздің қарашығындай сақтау"
@@ -137,7 +137,7 @@ const photos = [
     "phrase": "Қой аузынан шөп алмас"
   },
   {
-    "src": "/presentation-assets/illustration-105.jpg",
+    "src": "/presentation-assets/crayfish-whistling.jpg",
     "alt": "Иллюстрация выражения «Когда рак на горе свистнет»",
     "phrases": [
       "Когда рак на горе свистнет"
