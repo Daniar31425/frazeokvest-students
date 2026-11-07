@@ -181,3 +181,8 @@ const merged = new Map(window.LECTURE_KAZAKH_PHOTOS.map(photo => [photo.phrase, 
 for (const photo of photos) merged.set(photo.phrase, photo);
 window.LECTURE_KAZAKH_PHOTOS.splice(0, window.LECTURE_KAZAKH_PHOTOS.length, ...merged.values());
 })();
+
+window.LECTURE_IMAGE_MAP['Теория и практика составления словарей'] = {
+ src: '/presentation-assets/phraseological-dictionary.png',
+ alt: 'Фразеологический словарь русского языка под редакцией А. И. Молоткова'
+};

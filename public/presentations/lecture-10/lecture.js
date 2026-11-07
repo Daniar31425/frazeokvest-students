@@ -74,7 +74,7 @@ function paint(t){
       example.dataset.signature=signature;
       example.replaceChildren(...parts.map(([tag,txt,cls])=>{const e=document.createElement(tag);e.textContent=txt;e.className=cls;return e;}));
       const image=illustrationFor(event);
-      if(image){
+      if(image?.source){
         const credits=[[image.source,image.credit||'Иллюстрация: '+new URL(image.source).hostname]];
         if(image.licenseUrl)credits.push([image.licenseUrl,image.license]);
         if(image.secondarySource)credits.push([image.secondarySource,image.secondaryCredit||'Вторая фотография']);
