@@ -31,7 +31,7 @@ function showScene(scene,index){
   document.getElementById('back').disabled=index===0;
   document.getElementById('next').disabled=index===scenes.length-1;
 }
-function illustrationFor(event){return null;/*return window.LECTURE_IMAGE_MAP?.[event?.title] || illustrations[event?.art];*/}
+function illustrationFor(event){return window.LECTURE_IMAGE_MAP?.[event?.title] || illustrations[event?.art];}
 function drawArt(name,event){
   if(name==='portrait')return '<div class="photo-frame"><img src="assets/elmira-asiltayevna.png" alt="Орынбетова Эльмира Асилтаевна — лектор курса" width="1205" height="1205"></div>';
   const image=illustrationFor(event);
@@ -42,7 +42,14 @@ function drawArt(name,event){
 function paint(t){
   // Audio positions can land a few microseconds below a cue after seeking.
   t=Math.round(t*1000)/1000;
-  const {index,scene,event,key}=stateAt(t);
+  const {index,scene,event:baseEvent,key:baseKey}=stateAt(t);
+  const event=baseEvent;
+  const imageExamples=event ? [
+    {title:event.title,at:event.at},
+    ...(event.translation ? [{title:event.translation,at:event.translationAt ?? event.at}] : []),
+    ...(event.additions || []).map(item => ({title:item.text,at:item.at}))
+  ].filter(item => item.at<=t && illustrationFor(item)) : [];
+  const key=baseKey+':'+imageExamples.map(item=>item.title).join('|');
   if(sceneIndex!==index){sceneIndex=index;showScene(scene,index);}
   const current=scene.points.findLastIndex(p=>p.at<=t);
   pointNodes.forEach((node,i)=>{
@@ -57,10 +64,15 @@ function paint(t){
   if(key!==visualKey){
     visualKey=key;
     visual.classList.toggle('semantic-map',event?.art==='semantic');
-    art.innerHTML=event?drawArt(event.art,event):'';
-    art.hidden=!event || (!illustrationFor(event) && event.art!=='portrait');
-    visual.classList.toggle('has-image',Boolean(event && illustrationFor(event)));
-    visual.classList.toggle('text-only',Boolean(event && !illustrationFor(event) && event.art!=='portrait'));
+    art.innerHTML=imageExamples.length>1
+      ? '<div class="comparison-images">'+imageExamples.map(item=>{
+          const image=illustrationFor(item);
+          return '<figure><img class="phrase-image" src="'+image.src+'" alt="'+image.alt+'"><figcaption>'+item.title+'</figcaption></figure>';
+        }).join('')+'</div>'
+      : imageExamples.length===1 ? drawArt('text',imageExamples[0]) : event?drawArt(event.art,event):'';
+    art.hidden=!event || (!imageExamples.length && event.art!=='portrait');
+    visual.classList.toggle('has-image',Boolean(imageExamples.length));
+    visual.classList.toggle('text-only',Boolean(event && !imageExamples.length && event.art!=='portrait'));
   }
   visual.classList.toggle('shown',Boolean(event));
   visual.setAttribute('aria-hidden',event?'false':'true');
@@ -74,7 +86,7 @@ function paint(t){
       example.dataset.signature=signature;
       example.replaceChildren(...parts.map(([tag,txt,cls])=>{const e=document.createElement(tag);e.textContent=txt;e.className=cls;return e;}));
       const image=illustrationFor(event);
-      if(image){
+      if(image?.source){
         const credits=[[image.source,image.credit||'Иллюстрация: '+new URL(image.source).hostname]];
         if(image.licenseUrl)credits.push([image.licenseUrl,image.license]);
         if(image.secondarySource)credits.push([image.secondarySource,image.secondaryCredit||'Вторая фотография']);
