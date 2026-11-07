@@ -43,11 +43,12 @@ function paint(t){
   // Audio positions can land a few microseconds below a cue after seeking.
   t=Math.round(t*1000)/1000;
   const {index,scene,event:baseEvent,key:baseKey}=stateAt(t);
-  const addition=baseEvent?.additions?.findLast(item =>
-    item.at<=t && window.LECTURE_IMAGE_MAP?.[item.text]
-  );
-  const event=addition ? {...baseEvent,title:addition.text} : baseEvent;
-  const key=baseKey+':'+(addition?.at ?? 'main');
+  const event=baseEvent;
+  const imageExamples=event ? [
+    {title:event.title,at:event.at},
+    ...(event.additions || []).map(item => ({title:item.text,at:item.at}))
+  ].filter(item => item.at<=t && illustrationFor(item)) : [];
+  const key=baseKey+':'+imageExamples.map(item=>item.title).join('|');
   if(sceneIndex!==index){sceneIndex=index;showScene(scene,index);}
   const current=scene.points.findLastIndex(p=>p.at<=t);
   pointNodes.forEach((node,i)=>{
@@ -62,10 +63,15 @@ function paint(t){
   if(key!==visualKey){
     visualKey=key;
     visual.classList.toggle('semantic-map',event?.art==='semantic');
-    art.innerHTML=event?drawArt(event.art,event):'';
-    art.hidden=!event || (!illustrationFor(event) && event.art!=='portrait');
-    visual.classList.toggle('has-image',Boolean(event && illustrationFor(event)));
-    visual.classList.toggle('text-only',Boolean(event && !illustrationFor(event) && event.art!=='portrait'));
+    art.innerHTML=imageExamples.length>1
+      ? '<div class="comparison-images">'+imageExamples.map(item=>{
+          const image=illustrationFor(item);
+          return '<figure><img class="phrase-image" src="'+image.src+'" alt="'+image.alt+'"><figcaption>'+item.title+'</figcaption></figure>';
+        }).join('')+'</div>'
+      : imageExamples.length===1 ? drawArt('text',imageExamples[0]) : event?drawArt(event.art,event):'';
+    art.hidden=!event || (!imageExamples.length && event.art!=='portrait');
+    visual.classList.toggle('has-image',Boolean(imageExamples.length));
+    visual.classList.toggle('text-only',Boolean(event && !imageExamples.length && event.art!=='portrait'));
   }
   visual.classList.toggle('shown',Boolean(event));
   visual.setAttribute('aria-hidden',event?'false':'true');
