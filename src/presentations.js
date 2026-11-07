@@ -1,13 +1,10 @@
-const slugs = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen'];
-const localPresentationLinks = {
-  6: '/presentations/lecture-06/index.html',
-  11: '/presentations/lecture-11/index.html',
-};
-
-export const presentationLinks = Object.freeze(Object.fromEntries(slugs.map((slug, index) => [
-  index + 1,
-  localPresentationLinks[index + 1] ?? `https://frazeokvest-lecture-${slug}.chatgpt-edu-7368.chatgpt.site/`
-])));
+export const presentationLinks = Object.freeze(Object.fromEntries(
+  Array.from({ length: 15 }, (_, index) => {
+    const order = index + 1;
+    const folder = `lecture-${String(order).padStart(2, '0')}`;
+    return [order, `/presentations/${folder}/index.html`];
+  })
+));
 
 export function presentationCard(order) {
   const url = presentationLinks[order];

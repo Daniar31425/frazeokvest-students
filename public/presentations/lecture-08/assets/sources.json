@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Заварить кашу",
+    "file": "zavarit-kashu.jpg",
+    "article": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-z/zavarity-kashu",
+    "image": "https://www.fraze.ru/images/frazeologizm/na-z/zavarity-kashu-2.jpg"
+  },
+  {
+    "title": "Шито белыми нитками",
+    "file": "shito-alt.jpg",
+    "article": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-sha/shito-belymi-nitkami",
+    "image": "https://fraze.ru/images/frazeologizm/na-sh/shito-belymi-nitkami-2.jpg",
+    "note": "Comic about an obvious lie; selected over literal tailor cover"
+  },
+  {
+    "title": "Қой аузынан шөп алмас",
+    "file": "sheep.jpg",
+    "article": "https://commons.wikimedia.org/wiki/File:Sheep_Grazing_(53658485446).jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Sheep_Grazing_%2853658485446%29.jpg/960px-Sheep_Grazing_%2853658485446%29.jpg",
+    "author": "Jonathan D. Mallory / BLM Utah",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sheep_Grazing_(53658485446).jpg",
+    "modifications": "No edits; Wikimedia preview",
+    "note": "Literal sheep grazing photograph illustrates cultural image, not a dedicated phraseology drawing. Caption must explain meek harmless person."
+  },
+  {
+    "title": "Ахиллесова пята",
+    "file": "ahillesova-pyata.jpg",
+    "article": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-a/ahilesova-pjata",
+    "image": "https://fraze.ru/images/frazeologizm/na-a/ahilesova-pjata-1.jpg"
+  },
+  {
+    "title": "Сизифов труд",
+    "file": "sizif-alt.jpg",
+    "article": "https://fraze.ru/index.php/frazeologizm/na-bukvu-s/sizifov-trud",
+    "image": "https://fraze.ru/images/frazeologizm/na-s/sizifov-trud-2.jpg",
+    "note": "Classic myth illustration: Sisyphus pushes boulder uphill"
+  },
+  {
+    "title": "Дать зелёный свет",
+    "file": "green-light.jpg",
+    "article": "https://commons.wikimedia.org/wiki/File:Green_traffic_light_on_Vasilissis_Amalias_Avenue_at_night_on_October_30,_2022.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Green_traffic_light_on_Vasilissis_Amalias_Avenue_at_night_on_October_30%2C_2022.jpg/960px-Green_traffic_light_on_Vasilissis_Amalias_Avenue_at_night_on_October_30%2C_2022.jpg",
+    "author": "George E. Koronaios",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "modifications": "No edits; Wikimedia preview",
+    "note": "Literal green signal visualizes permission/approval metaphor"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Хоть пруд пруди",
+    "file": "prud.jpg",
+    "article": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-h/khot-prud-prudi",
+    "image": "https://fraze.ru/images/frazeologizm/na-h/hoti-prud-prudi-1.jpg"
+  },
+  {
+    "title": "Куры не клюют",
+    "file": "kury.jpg",
+    "article": "https://www.fraze.ru/index.php/frazeologizm/na-bukvu-d/deneg-kury-ne-klyuyut",
+    "image": "https://fraze.ru/images/frazeologizm/na-d/deneg-kury-ne-kliuyut-1.jpg"
+  },
+  {
+    "title": "Вагон и маленькая тележка",
+    "file": "wagon-photo.jpg",
+    "article": "https://commons.wikimedia.org/wiki/File:Brest_Railway_Museum_Freight_Wagon_2023-03-05_3207.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Brest_Railway_Museum_Freight_Wagon_2023-03-05_3207.jpg/960px-Brest_Railway_Museum_Freight_Wagon_2023-03-05_3207.jpg",
+    "author": "Mike1979 Russia / Mikhail Lyganov",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "modifications": "Unmodified Wikimedia preview",
+    "secondaryFile": "cart.jpg",
+    "secondaryArticle": "https://commons.wikimedia.org/wiki/File:Wheelbarrow_in_the_field.jpg",
+    "secondaryImage": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Wheelbarrow_in_the_field.jpg",
+    "secondaryAuthor": "Hyena",
+    "secondaryLicense": "Public domain",
+    "secondaryLicenseUrl": "https://commons.wikimedia.org/wiki/File:Wheelbarrow_in_the_field.jpg",
+    "note": "Two separate images for side-by-side HTML display, no montage"
+  },
+  {
+    "title": "Задать дёру",
+    "file": "slomya-golovu.webp",
+    "article": "https://frazeologia.ru/frazeologizm/b/bejati-slomya-golovu",
+    "note": "Shared illustration of fast running, not a dedicated article for this phrase"
+  },
+  {
+    "title": "Быть на коне",
+    "file": "rider.jpg",
+    "article": "https://commons.wikimedia.org/wiki/File:Rider_in_Mongolia,_2012.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Rider_in_Mongolia%2C_2012.jpg",
+    "author": "Al Jazeera English",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "modifications": "None",
+    "note": "Literal image of a rider used as a visual metaphor, caption must explain success"
+  },
+  {
+    "title": "У разбитого корыта",
+    "file": "koryto.jpg",
+    "article": "https://www.fraze.ru/index.php/aforizm/aforizmy-na-bukvu-o/ostatsya-u-razbitogo-koryta",
+    "image": "https://fraze.ru/images/aforizm/na-o/ostatisia-u-razbitogo-1.jpg"
+  }
+]
