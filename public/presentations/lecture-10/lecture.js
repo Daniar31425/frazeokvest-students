@@ -31,7 +31,7 @@ function showScene(scene,index){
   document.getElementById('back').disabled=index===0;
   document.getElementById('next').disabled=index===scenes.length-1;
 }
-function illustrationFor(event){/*removed-example-pictures*/if(["Көздің қарашығындай сақтау","Мухи не обидит","Қой аузынан шөп алмас"].some(p=>(event?.title||'').includes(p)))return null;return window.LECTURE_IMAGE_MAP?.[event?.title] || illustrations[event?.art];}
+function illustrationFor(event){return window.LECTURE_IMAGE_MAP?.[event?.title] || illustrations[event?.art];}
 function drawArt(name,event){
   if(name==='portrait')return '<div class="photo-frame"><img src="assets/valentina-dmitrievna.png" alt="Нарожная Валентина Дмитриевна — лектор курса" width="577" height="1024"></div>';
   const image=illustrationFor(event);
