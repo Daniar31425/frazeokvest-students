@@ -7,7 +7,7 @@ window.LECTURE_TIMELINE={duration:373.70775,scenes:[
   {at:37.82,text:'Фразеологическая картина мира'},
   {at:49.82,text:'Оценки поступков, чувства, одобрение и осуждение'}
  ],visuals:[
-  {at:0,until:23.32,art:'portrait',title:'Орынбетова Эльмира Асилтаевна'},
+  {at:0,until:23.32,art:'portrait',title:'Нарожная Валентина Дмитриевна'},
   {at:23.32,until:32.32,art:'text',title:'Волк в овечьей шкуре'},
   {at:32.32,art:'semantic',title:'Образы → оценки → представления',descriptionAt:41.64,description:'Часть языковой картины мира'}
  ]},

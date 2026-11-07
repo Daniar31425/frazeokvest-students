@@ -7,7 +7,7 @@ window.LECTURE_TIMELINE={duration:338.28575,scenes:[
   {at:17.20,text:'Близкие значения'},
   {at:19.76,text:'Противоположные состояния',detailAt:23.54,detail:'и разные формы одного выражения'}
  ],visuals:[
-  {at:0,until:25.74,art:'portrait',title:'Нарожная Валентина Дмитриевна'},
+  {at:0,until:25.74,art:'portrait',title:'Орынбетова Эльмира Асилтаевна'},
   {at:25.74,art:'semantic',title:'Три вида отношений',additions:[{at:29.24,text:'Синонимия'},{at:30.38,text:'Антонимия'},{at:31.58,text:'Вариантность'}]}
  ]},
  {at:32.84,title:'Синонимы: близость значений',points:[

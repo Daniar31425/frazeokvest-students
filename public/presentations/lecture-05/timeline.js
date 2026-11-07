@@ -6,7 +6,7 @@ window.LECTURE_TIMELINE={duration:326.530625,scenes:[
   {at:22.02,text:'Почему близкие обороты не всегда заменяют друг друга?'},
   {at:28.06,text:'Фразеологизм не только называет действие или качество'}
  ],visuals:[
-  {at:0,until:17.68,art:'portrait',title:'Нарожная Валентина Дмитриевна',description:'Лектор курса'},
+  {at:0,until:17.68,art:'portrait',title:'Абзалова Галия Аликовна',description:'Лектор курса'},
   {at:17.68,until:26.52,art:'text',title:'Золотые руки',descriptionAt:20.86,description:'Больше, чем просто «умелый»'},
   {at:26.52,art:'semantic',title:'Что передаёт фразеологизм?',additions:[{at:33.02,text:'Образ'},{at:34.34,text:'Эмоцию'},{at:35.76,text:'Оценку'},{at:38.02,text:'Стиль общения'}]}
  ]},

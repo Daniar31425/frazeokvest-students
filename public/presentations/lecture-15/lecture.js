@@ -33,7 +33,7 @@ function showScene(scene,index){
 }
 function illustrationFor(event){return null;/*return window.LECTURE_IMAGE_MAP?.[event?.title] || illustrations[event?.art];*/}
 function drawArt(name,event){
-  if(name==='portrait')return '<div class="photo-frame"><img src="assets/galiya-alikovna.png" alt="Абзалова Галия Аликовна — лектор курса" width="1205" height="1205"></div>';
+  if(name==='portrait')return '<div class="photo-frame"><img src="assets/elmira-asiltayevna.png" alt="Орынбетова Эльмира Асилтаевна — лектор курса" width="1205" height="1205"></div>';
   const image=illustrationFor(event);
   if(!image)return '';
   if(image.secondarySrc)return '<div class="image-pair"><img class="phrase-image" src="'+image.src+'" alt="'+image.alt+'" decoding="async"><img class="phrase-image" src="'+image.secondarySrc+'" alt="'+image.secondaryAlt+'" decoding="async"></div>';
