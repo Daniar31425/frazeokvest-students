@@ -42,7 +42,12 @@ function drawArt(name,event){
 function paint(t){
   // Audio positions can land a few microseconds below a cue after seeking.
   t=Math.round(t*1000)/1000;
-  const {index,scene,event,key}=stateAt(t);
+  const {index,scene,event:baseEvent,key:baseKey}=stateAt(t);
+  const addition=baseEvent?.additions?.findLast(item =>
+    item.at<=t && window.LECTURE_IMAGE_MAP?.[item.text]
+  );
+  const event=addition ? {...baseEvent,title:addition.text} : baseEvent;
+  const key=baseKey+':'+(addition?.at ?? 'main');
   if(sceneIndex!==index){sceneIndex=index;showScene(scene,index);}
   const current=scene.points.findLastIndex(p=>p.at<=t);
   pointNodes.forEach((node,i)=>{
