@@ -454,3 +454,12 @@ const merged = new Map(window.LECTURE_KAZAKH_PHOTOS.map(photo => [photo.phrase, 
 for (const photo of photos) merged.set(photo.phrase, photo);
 window.LECTURE_KAZAKH_PHOTOS.splice(0, window.LECTURE_KAZAKH_PHOTOS.length, ...merged.values());
 })();
+
+// Separate illustrated forms in the variant comparison.
+window.LECTURE_IMAGE_MAP['Төбесі көкке жетті'] = {
+  src: '/presentation-assets/illustration-070.jpg',
+  alt: 'Төбесі көкке жетті — человек испытывает большую радость'
+};
+window.LECTURE_IMAGE_MAP['Взял себя в руки'] = window.LECTURE_IMAGE_MAP['Брать себя в руки'];
+window.LECTURE_IMAGE_MAP['Возьмите себя в руки'] = window.LECTURE_IMAGE_MAP['Брать себя в руки'];
+window.LECTURE_IMAGE_MAP['Сокращение: как две капли'] = window.LECTURE_IMAGE_MAP['Как две капли воды'];
