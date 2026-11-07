@@ -169,3 +169,10 @@ const merged = new Map(window.LECTURE_KAZAKH_PHOTOS.map(photo => [photo.phrase, 
 for (const photo of photos) merged.set(photo.phrase, photo);
 window.LECTURE_KAZAKH_PHOTOS.splice(0, window.LECTURE_KAZAKH_PHOTOS.length, ...merged.values());
 })();
+
+window.LECTURE_IMAGE_MAP['Сизифов труд'] = {
+ src: '/presentation-assets/sisyphus.png',
+ alt: 'Сизиф толкает тяжёлый камень вверх по склону',
+ phrase: 'Сизифов труд', phrases: ['Сизифов труд']
+};
+window.LECTURE_KAZAKH_PHOTOS.push(window.LECTURE_IMAGE_MAP['Сизифов труд']);

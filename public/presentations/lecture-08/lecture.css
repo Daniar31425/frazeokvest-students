@@ -11,3 +11,5 @@
 .visual.semantic-map .visual-copy{display:grid;gap:.75cqw}
 .semantic-map .visual-copy p{border-left:3px solid #86a8ee;padding-left:1cqw}
 @media(prefers-reduced-motion:reduce){.moving,.phrase-image{animation:none!important}.point,.visual{transition:none;transform:none}.ambient{transform:none!important}}
+
+.comparison-images{display:flex;gap:12px;align-items:center;width:100%;height:100%}.comparison-images figure{flex:1;min-width:0;margin:0}.comparison-images .phrase-image{width:100%;height:auto;max-height:32cqw;object-fit:contain}.comparison-images figcaption{font-size:clamp(11px,1.3cqw,20px);text-align:center;margin-top:8px}
