@@ -143,3 +143,12 @@ const merged = new Map(window.LECTURE_KAZAKH_PHOTOS.map(photo => [photo.phrase, 
 for (const photo of photos) merged.set(photo.phrase, photo);
 window.LECTURE_KAZAKH_PHOTOS.splice(0, window.LECTURE_KAZAKH_PHOTOS.length, ...merged.values());
 })();
+
+(() => {
+ const image = {src:'/presentation-assets/tireless-chef.jpg',alt:'Повар усердно готовит у нескольких кастрюль',phrase:'Не покладая рук',phrases:['Повар работал не покладая рук','Не покладая рук']};
+ window.LECTURE_IMAGE_MAP['Повар работал не покладая рук'] = image;
+ window.LECTURE_IMAGE_MAP['Не покладая рук'] = image;
+ for (const photo of window.LECTURE_KAZAKH_PHOTOS) {
+  if (photo.phrases?.includes('Не покладая рук')) photo.src=image.src;
+ }
+})();
