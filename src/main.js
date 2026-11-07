@@ -105,7 +105,7 @@ function lessonView(id) {
   const lesson = lessons[id - 1];
   state.current = id; save();
   const content = presentationCard(lesson.order, escapeHtml(lesson.title)) + lesson.items.filter(item => item.type !== 'quiz').map(renderItem).join('');
-  app.innerHTML = shell(`<button class="back" data-go="course">← К учебному плану</button><article class="article rich-lesson"><div class="lesson-heading"><span class="eyebrow">Урок ${lesson.order} из 15 · ${lesson.estimated_minutes} минут</span><h1>${escapeHtml(lesson.title)}</h1><p class="lead">${escapeHtml(lesson.audience_note || '')}</p></div>${content}<div class="lesson-finish"><p><strong>Материал изучен?</strong> Проверьте себя по вопросам из исходной лекции.</p><button class="btn btn-primary" data-action="start-quiz">Перейти к тесту</button></div></article>`, 'course');
+  app.innerHTML = shell(`<button class="back" data-go="course">← К учебному плану</button><article class="article rich-lesson"><div class="lesson-heading"><span class="eyebrow">Урок ${lesson.order} из 15 · ${lesson.estimated_minutes} минут</span><h1>${escapeHtml(lesson.title)}</h1></div>${content}<div class="lesson-finish"><p><strong>Материал изучен?</strong> Проверьте себя по вопросам из исходной лекции.</p><button class="btn btn-primary" data-action="start-quiz">Перейти к тесту</button></div></article>`, 'course');
 }
 
 function optionInput(question, option, index, multiple = false) {
