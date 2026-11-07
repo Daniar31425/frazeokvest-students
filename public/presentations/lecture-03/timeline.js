@@ -75,7 +75,7 @@ window.LECTURE_TIMELINE={duration:359.1575625,scenes:[
    {at:266.62,until:275.02,art:'text',title:'Намылить шею',translationAt:269.92,translation:'Действие во время мытья',descriptionAt:272.44,description:'Свободное сочетание'},
    {at:275.02,until:289.16,art:'text',title:'Ему намылили шею за опоздание',translationAt:278.98,translation:'Строго отругали',descriptionAt:283.58,description:'Фразеологическое употребление'},
    {at:289.16,until:292.94,art:'text',title:'Қол жуу',translationAt:292.2,translation:'Мыть руки'},
-   {at:292.94,art:'text',title:'Қол жуу',translationAt:297.7,translation:'Утрата чего-либо',descriptionAt:299.24,description:'Или отстранение — в переносном контексте'}
+   {at:292.94,art:'text',title:'Қол жуу — переносное значение',translationAt:297.7,translation:'Утрата чего-либо',descriptionAt:299.24,description:'Или отстранение — в переносном контексте'}
  ]},
  {at:304.06,title:'Как проверить сочетание?',points:[
    {at:309.22,text:'Каково значение в данном предложении?'},

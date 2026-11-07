@@ -169,3 +169,76 @@ const merged = new Map(window.LECTURE_KAZAKH_PHOTOS.map(photo => [photo.phrase, 
 for (const photo of photos) merged.set(photo.phrase, photo);
 window.LECTURE_KAZAKH_PHOTOS.splice(0, window.LECTURE_KAZAKH_PHOTOS.length, ...merged.values());
 })();
+
+(() => {
+const entries = [
+  {
+    "src": "/presentation-assets/hand.jpg",
+    "alt": "Протянуть руку вперёд",
+    "phrase": "Протянуть руку вперёд",
+    "phrases": [
+      "Протянуть руку вперёд"
+    ]
+  },
+  {
+    "src": "/presentation-assets/illustration-029.jpg",
+    "alt": "Протянуть руку помощи",
+    "phrase": "Протянуть руку помощи",
+    "phrases": [
+      "Протянуть руку помощи"
+    ]
+  },
+  {
+    "src": "/presentation-assets/illustration-065.jpg",
+    "alt": "Протянуть ноги",
+    "phrase": "Протянуть ноги",
+    "phrases": [
+      "Протянуть ноги"
+    ]
+  },
+  {
+    "src": "/presentation-assets/tireless-carpenter.jpg",
+    "alt": "Он работал не покладая рук",
+    "phrase": "Он работал не покладая рук",
+    "phrases": [
+      "Он работал не покладая рук"
+    ]
+  },
+  {
+    "src": "/presentation-assets/illustration-071.jpg",
+    "alt": "Намылить шею",
+    "phrase": "Намылить шею",
+    "phrases": [
+      "Намылить шею"
+    ]
+  },
+  {
+    "src": "/presentation-assets/neck.jpg",
+    "alt": "Ему намылили шею за опоздание",
+    "phrase": "Ему намылили шею за опоздание",
+    "phrases": [
+      "Ему намылили шею за опоздание"
+    ]
+  },
+  {
+    "src": "/presentation-assets/illustration-058.jpg",
+    "alt": "Қол жуу",
+    "phrase": "Қол жуу",
+    "phrases": [
+      "Қол жуу"
+    ]
+  },
+  {
+    "src": "/presentation-assets/withdraw-involvement.jpg",
+    "alt": "Қол жуу — переносное значение",
+    "phrase": "Қол жуу — переносное значение",
+    "phrases": [
+      "Қол жуу — переносное значение"
+    ]
+  }
+];
+for (const image of entries) {
+ window.LECTURE_IMAGE_MAP[image.phrase] = image;
+ window.LECTURE_KAZAKH_PHOTOS.push(image);
+}
+})();
