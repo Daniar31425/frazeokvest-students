@@ -205,3 +205,10 @@ const merged = new Map(window.LECTURE_KAZAKH_PHOTOS.map(photo => [photo.phrase, 
 for (const photo of photos) merged.set(photo.phrase, photo);
 window.LECTURE_KAZAKH_PHOTOS.splice(0, window.LECTURE_KAZAKH_PHOTOS.length, ...merged.values());
 })();
+
+// Illustration of the emotional meaning of the expression.
+(() => {
+ const image = {"src": "/presentation-assets/touching-melody.jpg", "alt": "Музыка глубоко трогает слушательницу", "phrase": "Брать за душу", "phrases": ["Брать за душу", "Эта мелодия берёт за душу"]};
+ for (const phrase of image.phrases) window.LECTURE_IMAGE_MAP[phrase] = image;
+ window.LECTURE_KAZAKH_PHOTOS.push(image);
+})();
