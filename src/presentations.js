@@ -6,8 +6,8 @@ export const presentationLinks = Object.freeze(Object.fromEntries(
   })
 ));
 
-export function presentationCard(order) {
+export function presentationCard(order, titleHtml) {
   const url = presentationLinks[order];
   if (!url) return '';
-  return `<section class="presentation-card" aria-label="Презентация лекции ${order}"><div><span class="eyebrow">Лекция ${order} · Презентация с озвучкой</span><h2>Посмотрите объяснение темы</h2><p>Откройте презентацию здесь, а после просмотра переходите к материалу и тесту ниже.</p></div><details class="presentation-player"><summary class="btn btn-primary">Смотреть презентацию <span aria-hidden="true">▶</span></summary><iframe src="${url}" title="Интерактивная презентация лекции ${order}" loading="lazy" allow="fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></details></section>`;
+  return `<section class="presentation-card" aria-label="Презентация лекции ${order}"><div><span class="eyebrow">Лекция ${order} · ${titleHtml}</span><h2>Посмотрите объяснение темы</h2><p>Откройте презентацию здесь, а после просмотра переходите к материалу и тесту ниже.</p></div><details class="presentation-player"><summary class="btn btn-primary">Смотреть презентацию <span aria-hidden="true">▶</span></summary><iframe src="${url}" title="Интерактивная презентация лекции ${order}" loading="lazy" allow="fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></details></section>`;
 }
