@@ -169,7 +169,7 @@ function finalView() {
 
 function certificateView() {
   if (!state.certificate) { app.innerHTML = shell('<section class="empty"><h1>Сертификат ещё не выдан</h1><p>Он появится после успешной сдачи итогового теста.</p></section>', 'certificate'); return; }
-  app.innerHTML = shell(`<section class="certificate"><img class="cert-logo course-logo" src="/brand/course-logo.svg" alt="Логотип курса Фразеология" width="100" height="66"><span>МАССОВЫЙ ОНЛАЙН-КУРС</span><h1>Сертификат</h1><p>подтверждает, что</p><h2>${escapeHtml(state.name)}</h2><p>успешно завершил(а) курс<br><strong>«${escapeHtml(course.title)}»</strong></p><div class="cert-meta"><span>Дата<br><strong>${state.certificate.date}</strong></span><span>№ сертификата<br><strong>${state.certificate.number}</strong></span></div></section><button class="btn btn-primary print" data-action="print">Скачать / печать</button>`, 'certificate');
+  app.innerHTML = shell(`<section class="certificate"><img class="cert-logo course-logo" src="/brand/course-logo.svg" alt="Логотип курса Фразеология" width="100" height="66"><span>МАССОВЫЙ ОНЛАЙН-КУРС</span><h1>Сертификат</h1><p>подтверждает, что</p><h2>${escapeHtml(state.name)}</h2><p>успешно завершил(а) курс<br><strong>«Фразеологизмы русского и казахского языков: изучаем, сравниваем, применяем»</strong></p><div class="cert-meta"><span>Дата<br><strong>${state.certificate.date}</strong></span><span>№ сертификата<br><strong>${state.certificate.number}</strong></span></div></section><button class="btn btn-primary print" data-action="print">Скачать / печать</button>`, 'certificate');
 }
 
 async function adminView(search = '') {
