@@ -56,7 +56,7 @@ function setMobileMenu(open) {
 }
 
 function renderAuth(message = '') {
-  app.innerHTML = `<main class="auth-wrap"><section class="auth-card">${logo()}<span class="eyebrow">Массовый онлайн-курс</span><h1>${state.mode === 'register' ? 'Создать аккаунт' : 'Войти в курс'}</h1><p class="muted">15 полноценных уроков, тесты после каждой темы и итоговая проверка.</p>${message ? `<div class="notice">${escapeHtml(message)}</div>` : !isSupabaseConfigured ? '<div class="notice">Supabase не настроен — доступен локальный демо-режим.</div>' : ''}<form data-form="auth">${state.mode === 'register' ? '<label class="field">ФИО<input name="name" required placeholder="Иванов Иван Иванович"></label>' : ''}<label class="field">Email<input name="email" type="email" required></label><label class="field">Пароль<input name="password" type="password" required minlength="6"></label><button class="btn btn-primary">${state.mode === 'register' ? 'Зарегистрироваться' : 'Войти'}</button></form><button class="link-btn" data-action="toggle-auth">${state.mode === 'register' ? 'Уже есть аккаунт? Войти' : 'Нет аккаунта? Регистрация'}</button>${!isSupabaseConfigured ? '<button class="btn btn-outline demo" data-action="demo">Открыть демо курса</button>' : ''}</section></main>`;
+  app.innerHTML = `<main class="auth-wrap"><section class="auth-card">${logo()}<span class="eyebrow">Массовый онлайн-курс</span><h1>${state.mode === 'register' ? 'Создать аккаунт' : 'Войти в курс'}</h1><p class="muted">15 полноценных занятий, тесты после каждой темы и итоговая проверка.</p>${message ? `<div class="notice">${escapeHtml(message)}</div>` : !isSupabaseConfigured ? '<div class="notice">Supabase не настроен — доступен локальный демо-режим.</div>' : ''}<form data-form="auth">${state.mode === 'register' ? '<label class="field">ФИО<input name="name" required placeholder="Иванов Иван Иванович"></label>' : ''}<label class="field">Email<input name="email" type="email" required></label><label class="field">Пароль<input name="password" type="password" required minlength="6"></label><button class="btn btn-primary">${state.mode === 'register' ? 'Зарегистрироваться' : 'Войти'}</button></form><button class="link-btn" data-action="toggle-auth">${state.mode === 'register' ? 'Уже есть аккаунт? Войти' : 'Нет аккаунта? Регистрация'}</button>${!isSupabaseConfigured ? '<button class="btn btn-outline demo" data-action="demo">Открыть демо курса</button>' : ''}</section></main>`;
 }
 
 function renderLanding() {
@@ -66,7 +66,7 @@ function renderLanding() {
     ['valentina-dmitrievna.png', 'Нарожная Валентина Дмитриевна'],
     ['elmira-asiltayevna.png', 'Орынбетова Эльмира Асилтаевна']
   ];
-  app.innerHTML = `<main class="landing"><header class="landing-header">${logo()}<span>Онлайн-курс для студентов</span></header><section class="landing-intro"><span class="eyebrow">Русский и казахский языки</span><h1>Фразеологическая картина мира: <em>изучаем, сравниваем, применяем</em></h1><p>Устойчивые выражения — ключ к языку и культуре. Узнайте, как устроены фразеологизмы, сравните русские и казахские обороты и научитесь применять их в речи.</p><div class="landing-facts"><span>15 лекций</span><span>Интерактивные презентации</span><span>Тесты и сертификат</span></div><a class="landing-scroll" href="#lecturers">Познакомиться с лекторами <span aria-hidden="true">↓</span></a></section><section class="landing-lecturers" id="lecturers"><span class="eyebrow">Авторы и лекторы</span><div class="lecturer-grid">${lecturers.map(([photo,name])=>`<article class="lecturer-card"><img src="/lecturers/${photo}" alt="${name}" loading="lazy"><h3>${name}</h3><p>Лектор курса</p></article>`).join('')}</div></section><section class="landing-start"><h2>От знакомства — к пониманию</h2><p>Изучайте материал в своём темпе, проверяйте знания после каждой темы и завершите курс итоговым тестом.</p><button class="btn btn-primary" data-action="enter-course">Начать курс <span aria-hidden="true">→</span></button><small>Войдите в аккаунт или зарегистрируйтесь</small></section><footer class="landing-footer">Фразеология · Онлайн-курс для студентов</footer></main>`;
+  app.innerHTML = `<main class="landing"><header class="landing-header">${logo()}<span>Онлайн-курс для студентов</span></header><section class="landing-intro"><span class="eyebrow">Русский и казахский языки</span><h1>Фразеологическая картина мира: <em>изучаем, сравниваем, применяем</em></h1><p>Устойчивые выражения — ключ к языку и культуре. Узнайте, как устроены фразеологизмы, сравните русские и казахские обороты и научитесь применять их в речи.</p><div class="landing-facts"><span>15 занятий</span><span>Интерактивные презентации</span><span>Тесты и сертификат</span></div><a class="landing-scroll" href="#lecturers">Познакомиться с лекторами <span aria-hidden="true">↓</span></a></section><section class="landing-lecturers" id="lecturers"><span class="eyebrow">Авторы и лекторы</span><div class="lecturer-grid">${lecturers.map(([photo,name])=>`<article class="lecturer-card"><img src="/lecturers/${photo}" alt="${name}" loading="lazy"><h3>${name}</h3><p>Лектор курса</p></article>`).join('')}</div></section><section class="landing-start"><h2>От знакомства — к пониманию</h2><p>Изучайте материал в своём темпе, проверяйте знания после каждой темы и завершите курс итоговым тестом.</p><button class="btn btn-primary" data-action="enter-course">Начать курс <span aria-hidden="true">→</span></button><small>Войдите в аккаунт или зарегистрируйтесь</small></section><footer class="landing-footer">Фразеология · Онлайн-курс для студентов</footer></main>`;
 }
 
 function dashboard() {
@@ -80,7 +80,7 @@ function dashboard() {
     }).join('');
     return `<section class="module-block"><div class="section-head"><div><span class="eyebrow">Модуль ${module.order}</span><h2>${escapeHtml(module.title)}</h2></div></div><div class="lesson-list">${cards}</div></section>`;
   }).join('');
-  app.innerHTML = shell(`<section class="hero"><span class="eyebrow">${escapeHtml(course.title)}</span><h1>${escapeHtml(course.subtitle)}</h1>${markdown(course.description_md)}<div class="progress-row"><span>Прогресс курса</span><span>${done} / 15</span></div><div class="progress"><i style="width:${Math.round(done / 15 * 100)}%"></i></div></section>${moduleBlocks}<button class="final-card ${done < 15 ? 'locked' : ''}" data-go="final" ${done < 15 ? 'disabled' : ''}><span class="eyebrow">Финальный этап</span><h2>Итоговый тест по всем темам</h2><p>${done < 15 ? 'Откроется после успешной сдачи всех тестов.' : 'Все уроки пройдены — можно начинать.'}</p></button>`, 'course');
+  app.innerHTML = shell(`<section class="hero"><span class="eyebrow">${escapeHtml(course.title)}</span><h1>${escapeHtml(course.subtitle)}</h1>${markdown(course.description_md)}<div class="progress-row"><span>Прогресс курса</span><span>${done} / 15</span></div><div class="progress"><i style="width:${Math.round(done / 15 * 100)}%"></i></div></section>${moduleBlocks}<button class="final-card ${done < 15 ? 'locked' : ''}" data-go="final" ${done < 15 ? 'disabled' : ''}><span class="eyebrow">Финальный этап</span><h2>Итоговый тест по всем темам</h2><p>${done < 15 ? 'Откроется после успешной сдачи всех тестов.' : 'Все занятия пройдены — можно начинать.'}</p></button>`, 'course');
 }
 
 function renderBlock(block) {
@@ -92,7 +92,7 @@ function renderBlock(block) {
 }
 
 function renderItem(item) {
-  if (item.type === 'intro') return `<section class="lesson-intro"><span class="eyebrow">Введение</span>${markdown(item.hook_md)}<h2>После урока вы сможете</h2><ul>${item.objectives.map(x => `<li>${escapeHtml(x)}</li>`).join('')}</ul></section>`;
+  if (item.type === 'intro') return `<section class="lesson-intro"><span class="eyebrow">Введение</span>${markdown(item.hook_md)}<h2>После занятия вы сможете</h2><ul>${item.objectives.map(x => `<li>${escapeHtml(x)}</li>`).join('')}</ul></section>`;
   if (item.type === 'reading') return `<section class="reading-section"><h2>${escapeHtml(item.title)}</h2>${item.blocks.map(renderBlock).join('')}</section>`;
   if (item.type === 'key_terms') return `<section><h2>${escapeHtml(item.title)}</h2><dl class="terms">${item.terms.map(x => `<div><dt>${escapeHtml(x.term)}</dt><dd>${markdown(x.definition)}</dd></div>`).join('')}</dl></section>`;
   if (item.type === 'recap') return `<section><h2>${escapeHtml(item.title)}</h2><ol class="recap">${item.points.map(x => `<li>${markdown(x)}</li>`).join('')}</ol></section>`;
@@ -105,7 +105,7 @@ function lessonView(id) {
   const lesson = lessons[id - 1];
   state.current = id; save();
   const content = presentationCard(lesson.order, escapeHtml(lesson.title)) + lesson.items.filter(item => item.type !== 'quiz').map(renderItem).join('');
-  app.innerHTML = shell(`<button class="back" data-go="course">← К учебному плану</button><article class="article rich-lesson"><div class="lesson-heading"><span class="eyebrow">Урок ${lesson.order} из 15 · ${lesson.estimated_minutes} минут</span><h1>${escapeHtml(lesson.title)}</h1></div>${content}<div class="lesson-finish"><p><strong>Материал изучен?</strong> Проверьте себя по вопросам из исходной лекции.</p><button class="btn btn-primary" data-action="start-quiz">Перейти к тесту</button></div></article>`, 'course');
+  app.innerHTML = shell(`<button class="back" data-go="course">← К учебному плану</button><article class="article rich-lesson"><div class="lesson-heading"><span class="eyebrow">Занятие ${lesson.order} из 15 · ${lesson.estimated_minutes} минут</span><h1>${escapeHtml(lesson.title)}</h1></div>${content}<div class="lesson-finish"><p><strong>Материал изучен?</strong> Проверьте себя по вопросам из материала занятия.</p><button class="btn btn-primary" data-action="start-quiz">Перейти к тесту</button></div></article>`, 'course');
 }
 
 function optionInput(question, option, index, multiple = false) {
@@ -124,7 +124,7 @@ function questionHtml(question, number) {
 function quizView() {
   const lesson = lessons[state.current - 1];
   const quiz = lesson.items.find(item => item.type === 'quiz');
-  app.innerHTML = shell(`<button class="back" data-lesson="${lesson.order}">← Вернуться к материалу</button><section class="test-card"><span class="eyebrow">Тест · Урок ${lesson.order}</span><h1>${escapeHtml(quiz.title)}</h1><form data-form="quiz">${quiz.questions.map(questionHtml).join('')}<button class="btn btn-primary">Проверить ответы</button></form></section>`, 'course');
+  app.innerHTML = shell(`<button class="back" data-lesson="${lesson.order}">← Вернуться к материалу</button><section class="test-card"><span class="eyebrow">Тест · Занятие ${lesson.order}</span><h1>${escapeHtml(quiz.title)}</h1><form data-form="quiz">${quiz.questions.map(questionHtml).join('')}<button class="btn btn-primary">Проверить ответы</button></form></section>`, 'course');
 }
 
 const sameSet = (a, b) => a.length === b.length && a.every(value => b.includes(value));
@@ -158,12 +158,12 @@ function quizImageCredits() {
 }
 
 function resultView(score, passed) {
-  const next = state.current < 15 ? `<button class="btn btn-primary next-lesson" data-lesson="${state.current + 1}">Следующий урок <span>→</span></button>` : '<button class="btn btn-primary next-lesson" data-go="final">Перейти к итоговому тесту <span>→</span></button>';
-  app.innerHTML = shell(`<section class="result ${passed ? 'success' : 'fail'}"><div class="result-icon">${passed ? '✓' : '!'}</div><span class="eyebrow">Результат теста</span><h1>${score}%</h1><p>${passed ? 'Урок завершён. Следующая тема открыта.' : 'Повторите материал и попробуйте снова.'}</p><div class="actions">${passed ? next : '<button class="btn btn-primary" data-go="course">К учебному плану</button>'}<button class="btn btn-outline" data-lesson="${state.current}">Повторить материал</button></div></section>${quizImageCredits()}`, 'course');
+  const next = state.current < 15 ? `<button class="btn btn-primary next-lesson" data-lesson="${state.current + 1}">Следующее занятие <span>→</span></button>` : '<button class="btn btn-primary next-lesson" data-go="final">Перейти к итоговому тесту <span>→</span></button>';
+  app.innerHTML = shell(`<section class="result ${passed ? 'success' : 'fail'}"><div class="result-icon">${passed ? '✓' : '!'}</div><span class="eyebrow">Результат теста</span><h1>${score}%</h1><p>${passed ? 'Занятие завершено. Следующая тема открыта.' : 'Повторите материал и попробуйте снова.'}</p><div class="actions">${passed ? next : '<button class="btn btn-primary" data-go="course">К учебному плану</button>'}<button class="btn btn-outline" data-lesson="${state.current}">Повторить материал</button></div></section>${quizImageCredits()}`, 'course');
 }
 
 function finalView() {
-  if (state.completed.length < 15) { app.innerHTML = shell('<section class="empty"><h1>Итоговый тест пока закрыт</h1><p>Сначала завершите все 15 уроков.</p><button class="btn btn-primary" data-go="course">Продолжить обучение</button></section>', 'final'); return; }
+  if (state.completed.length < 15) { app.innerHTML = shell('<section class="empty"><h1>Итоговый тест пока закрыт</h1><p>Сначала завершите все 15 занятий.</p><button class="btn btn-primary" data-go="course">Продолжить обучение</button></section>', 'final'); return; }
   app.innerHTML = shell(`<section class="test-card"><span class="eyebrow">Финальная проверка</span><h1>Итоговый тест по 15 темам</h1><form data-form="final">${finalQuestions.map((q, i) => `<fieldset><legend>${i + 1}. ${escapeHtml(q.question)}</legend>${q.options.map((o, j) => `<label class="option"><input type="radio" name="q${i}" value="${j}" required><span>${escapeHtml(o)}</span></label>`).join('')}</fieldset>`).join('')}<button class="btn btn-primary">Завершить тест</button></form></section>`, 'final');
 }
 
